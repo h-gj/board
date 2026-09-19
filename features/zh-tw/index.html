@@ -1,0 +1,907 @@
+<!DOCTYPE html><html lang="zh-TW" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>1NX · 畫布能做什麼</title>
+    <meta name="description" content="一張紙裝下整件事：流程圖、線框原型、心智圖、程式碼、文件、圖片，在同一張無限畫布上畫出來、導進來、改下去。單機運行，內容只存在本機。 Mermaid、PlantUML、draw.io、Visio、XMind 轉成可編輯元素，一萬個元素同屏拖曳幀 p95 9.5 毫秒。">
+    <link rel="canonical" href="https://1nx.net/features/zh-tw/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="1NX · 畫布能做什麼">
+    <meta property="og:description" content="流程圖、線框原型、心智圖、程式碼、文件、圖片，在同一張無限畫布上畫出來、導進、改下去。">
+    <meta property="og:url" content="https://1nx.net/features/zh-tw/"><meta property="og:locale" content="zh_TW">
+    <meta property="og:image" content="https://1nx.net/og-image-1nx-20260724.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="preload" href="/Virgil.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+
+    <link rel="alternate" hreflang="en" href="https://1nx.net/features/en/"><link rel="alternate" hreflang="ar-SA" href="https://1nx.net/features/ar-sa/"><link rel="alternate" hreflang="bg-BG" href="https://1nx.net/features/bg-bg/"><link rel="alternate" hreflang="ca-ES" href="https://1nx.net/features/ca-es/"><link rel="alternate" hreflang="cs-CZ" href="https://1nx.net/features/cs-cz/"><link rel="alternate" hreflang="de-DE" href="https://1nx.net/features/de-de/"><link rel="alternate" hreflang="el-GR" href="https://1nx.net/features/el-gr/"><link rel="alternate" hreflang="es-ES" href="https://1nx.net/features/es-es/"><link rel="alternate" hreflang="eu-ES" href="https://1nx.net/features/eu-es/"><link rel="alternate" hreflang="fa-IR" href="https://1nx.net/features/fa-ir/"><link rel="alternate" hreflang="fi-FI" href="https://1nx.net/features/fi-fi/"><link rel="alternate" hreflang="fr-FR" href="https://1nx.net/features/fr-fr/"><link rel="alternate" hreflang="gl-ES" href="https://1nx.net/features/gl-es/"><link rel="alternate" hreflang="he-IL" href="https://1nx.net/features/he-il/"><link rel="alternate" hreflang="hi-IN" href="https://1nx.net/features/hi-in/"><link rel="alternate" hreflang="hu-HU" href="https://1nx.net/features/hu-hu/"><link rel="alternate" hreflang="id-ID" href="https://1nx.net/features/id-id/"><link rel="alternate" hreflang="it-IT" href="https://1nx.net/features/it-it/"><link rel="alternate" hreflang="ja-JP" href="https://1nx.net/features/ja-jp/"><link rel="alternate" hreflang="kab-KAB" href="https://1nx.net/features/kab-kab/"><link rel="alternate" hreflang="kk-KZ" href="https://1nx.net/features/kk-kz/"><link rel="alternate" hreflang="ko-KR" href="https://1nx.net/features/ko-kr/"><link rel="alternate" hreflang="ku-TR" href="https://1nx.net/features/ku-tr/"><link rel="alternate" hreflang="lt-LT" href="https://1nx.net/features/lt-lt/"><link rel="alternate" hreflang="lv-LV" href="https://1nx.net/features/lv-lv/"><link rel="alternate" hreflang="my-MM" href="https://1nx.net/features/my-mm/"><link rel="alternate" hreflang="nb-NO" href="https://1nx.net/features/nb-no/"><link rel="alternate" hreflang="nl-NL" href="https://1nx.net/features/nl-nl/"><link rel="alternate" hreflang="nn-NO" href="https://1nx.net/features/nn-no/"><link rel="alternate" hreflang="oc-FR" href="https://1nx.net/features/oc-fr/"><link rel="alternate" hreflang="pa-IN" href="https://1nx.net/features/pa-in/"><link rel="alternate" hreflang="pl-PL" href="https://1nx.net/features/pl-pl/"><link rel="alternate" hreflang="pt-BR" href="https://1nx.net/features/pt-br/"><link rel="alternate" hreflang="pt-PT" href="https://1nx.net/features/pt-pt/"><link rel="alternate" hreflang="ro-RO" href="https://1nx.net/features/ro-ro/"><link rel="alternate" hreflang="ru-RU" href="https://1nx.net/features/ru-ru/"><link rel="alternate" hreflang="sk-SK" href="https://1nx.net/features/sk-sk/"><link rel="alternate" hreflang="sv-SE" href="https://1nx.net/features/sv-se/"><link rel="alternate" hreflang="sl-SI" href="https://1nx.net/features/sl-si/"><link rel="alternate" hreflang="tr-TR" href="https://1nx.net/features/tr-tr/"><link rel="alternate" hreflang="uk-UA" href="https://1nx.net/features/uk-ua/"><link rel="alternate" hreflang="zh-CN" href="https://1nx.net/features/"><link rel="alternate" hreflang="zh-HK" href="https://1nx.net/features/zh-hk/"><link rel="alternate" hreflang="zh-TW" href="https://1nx.net/features/zh-tw/"><link rel="alternate" hreflang="vi-VN" href="https://1nx.net/features/vi-vn/"><link rel="alternate" hreflang="mr-IN" href="https://1nx.net/features/mr-in/"><link rel="alternate" hreflang="x-default" href="https://1nx.net/features/en/"><link rel="stylesheet" href="/features/page.css">
+    <script src="/features/page.js" defer=""></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a class="mark" href="/">1NX</a>
+        <nav class="top-nav" aria-label="頁面導航">
+          <details class="language-menu" data-language-menu=""><summary class="top-link">語言：繁體中文</summary><ul><li><a href="/features/en/" hreflang="en" lang="en">English</a></li><li><a href="/features/ar-sa/" hreflang="ar-SA" lang="ar-SA">العربية</a></li><li><a href="/features/bg-bg/" hreflang="bg-BG" lang="bg-BG">Български</a></li><li><a href="/features/ca-es/" hreflang="ca-ES" lang="ca-ES">Català</a></li><li><a href="/features/cs-cz/" hreflang="cs-CZ" lang="cs-CZ">Česky</a></li><li><a href="/features/de-de/" hreflang="de-DE" lang="de-DE">Deutsch</a></li><li><a href="/features/el-gr/" hreflang="el-GR" lang="el-GR">Ελληνικά</a></li><li><a href="/features/es-es/" hreflang="es-ES" lang="es-ES">Español</a></li><li><a href="/features/eu-es/" hreflang="eu-ES" lang="eu-ES">Euskara</a></li><li><a href="/features/fa-ir/" hreflang="fa-IR" lang="fa-IR">فارسی</a></li><li><a href="/features/fi-fi/" hreflang="fi-FI" lang="fi-FI">Suomi</a></li><li><a href="/features/fr-fr/" hreflang="fr-FR" lang="fr-FR">Français</a></li><li><a href="/features/gl-es/" hreflang="gl-ES" lang="gl-ES">Galego</a></li><li><a href="/features/he-il/" hreflang="he-IL" lang="he-IL">עברית</a></li><li><a href="/features/hi-in/" hreflang="hi-IN" lang="hi-IN">हिन्दी</a></li><li><a href="/features/hu-hu/" hreflang="hu-HU" lang="hu-HU">Magyar</a></li><li><a href="/features/id-id/" hreflang="id-ID" lang="id-ID">Bahasa Indonesia</a></li><li><a href="/features/it-it/" hreflang="it-IT" lang="it-IT">Italiano</a></li><li><a href="/features/ja-jp/" hreflang="ja-JP" lang="ja-JP">日本語</a></li><li><a href="/features/kab-kab/" hreflang="kab-KAB" lang="kab-KAB">Taqbaylit</a></li><li><a href="/features/kk-kz/" hreflang="kk-KZ" lang="kk-KZ">Қазақ тілі</a></li><li><a href="/features/ko-kr/" hreflang="ko-KR" lang="ko-KR">한국어</a></li><li><a href="/features/ku-tr/" hreflang="ku-TR" lang="ku-TR">Kurdî</a></li><li><a href="/features/lt-lt/" hreflang="lt-LT" lang="lt-LT">Lietuvių</a></li><li><a href="/features/lv-lv/" hreflang="lv-LV" lang="lv-LV">Latviešu</a></li><li><a href="/features/my-mm/" hreflang="my-MM" lang="my-MM">Burmese</a></li><li><a href="/features/nb-no/" hreflang="nb-NO" lang="nb-NO">Norsk bokmål</a></li><li><a href="/features/nl-nl/" hreflang="nl-NL" lang="nl-NL">Nederlands</a></li><li><a href="/features/nn-no/" hreflang="nn-NO" lang="nn-NO">Norsk nynorsk</a></li><li><a href="/features/oc-fr/" hreflang="oc-FR" lang="oc-FR">Occitan</a></li><li><a href="/features/pa-in/" hreflang="pa-IN" lang="pa-IN">ਪੰਜਾਬੀ</a></li><li><a href="/features/pl-pl/" hreflang="pl-PL" lang="pl-PL">Polski</a></li><li><a href="/features/pt-br/" hreflang="pt-BR" lang="pt-BR">Português Brasileiro</a></li><li><a href="/features/pt-pt/" hreflang="pt-PT" lang="pt-PT">Português</a></li><li><a href="/features/ro-ro/" hreflang="ro-RO" lang="ro-RO">Română</a></li><li><a href="/features/ru-ru/" hreflang="ru-RU" lang="ru-RU">Русский</a></li><li><a href="/features/sk-sk/" hreflang="sk-SK" lang="sk-SK">Slovenčina</a></li><li><a href="/features/sv-se/" hreflang="sv-SE" lang="sv-SE">Svenska</a></li><li><a href="/features/sl-si/" hreflang="sl-SI" lang="sl-SI">Slovenščina</a></li><li><a href="/features/tr-tr/" hreflang="tr-TR" lang="tr-TR">Türkçe</a></li><li><a href="/features/uk-ua/" hreflang="uk-UA" lang="uk-UA">Українська</a></li><li><a href="/features/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/features/zh-hk/" hreflang="zh-HK" lang="zh-HK">繁體中文（香港）</a></li><li><a href="/features/zh-tw/" hreflang="zh-TW" lang="zh-TW" aria-current="page">繁體中文</a></li><li><a href="/features/vi-vn/" hreflang="vi-VN" lang="vi-VN">Tiếng Việt</a></li><li><a href="/features/mr-in/" hreflang="mr-IN" lang="mr-IN">मराठी</a></li></ul></details>
+          <a class="top-link" href="/">打開畫布</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>一張紙，<br>裝下整件事</h1>
+          <ol class="hero-steps">
+            <li>畫草稿</li>
+            <li>導舊圖</li>
+            <li>攤資料</li>
+            <li>貼程式碼</li>
+            <li>出方案</li>
+          </ol>
+          <p class="lede lede-tight">這幾件事，都在同一張畫布上完成。</p>
+          <div class="actions">
+            <a class="btn" href="/">
+              打開一張空畫布
+              <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 10h11M11 6l4 4-4 4"></path>
+              </svg>
+            </a>
+            <a class="btn-quiet" href="#draw">先看看能畫什麼</a>
+          </div>
+          <p class="hero-safe">
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 1.5c2.3 1.1 4.5 1.8 6.5 2.1-.1 5.6-1.2 10-6.4 12.9C2.9 13.7 1.7 9.3 1.5 3.7 3.6 3.3 5.8 2.6 8 1.5z"></path>
+              <path d="M5.2 8.7c.9 1 1.7 1.9 2.4 2.8 1.1-1.9 2.3-3.6 3.6-5" stroke="var(--green)"></path>
+            </svg>
+            <span>單機運行，內容只存在自己的電腦裡，不做網路儲存和互動。</span>
+          </p>
+          <p class="hero-note">不註冊、不選模板，這點開就是畫布。</p>
+        </div>
+
+        <!-- 首屏画布片段：本页唯一一处编排动画，之后各节不再重复入场 -->
+        <div class="stage-wrap">
+          <div class="stage" aria-hidden="true">
+            <div class="stage-col">
+              <div class="piece piece-flow">
+                <i class="ring"></i>
+                <figure>
+                  <svg class="neat" viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="8" y="8" width="62" height="30" rx="5" stroke="var(--blue)"></rect>
+                    <path d="M70 23h30" stroke="var(--ink-faint)"></path>
+                    <path d="M96 19l5 4-5 4" stroke="var(--ink-faint)"></path>
+                    <path d="M131 8l28 15-28 15-28-15z" stroke="var(--amber)"></path>
+                    <path d="M131 38v18h-52v12" stroke="var(--ink-faint)"></path>
+                    <path d="M75 64l4 5 4-5" stroke="var(--ink-faint)"></path>
+                    <rect x="44" y="68" width="70" height="22" rx="5" stroke="var(--green)"></rect>
+                  </svg>
+                  <!-- 同一张图的手绘版本：风格切换那一拍与规整版交叉淡入 -->
+                  <svg class="sketch" viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 10c19-2.5 39-2 58-.5 1.5 8.5 1 18-.5 27-19 2-38.5 1.5-57 .5-2-9-1.5-18 0-27z" stroke="var(--blue)"></path>
+                    <path d="M71 23.5c9.5-1 19-.8 28-.5" stroke="var(--ink-faint)"></path>
+                    <path d="M96.5 19.5c2 1.5 3.6 2.8 5 4-1.8 1.5-3.4 2.9-4.8 4.2" stroke="var(--ink-faint)"></path>
+                    <path d="M130.5 8.5c9.8 4.6 19 9.6 28.5 15-9.5 5.2-18.9 10-28 14.7-9.6-4.9-19-9.8-28.3-14.9 9.2-5 18.5-9.9 27.8-14.8z" stroke="var(--amber)"></path>
+                    <path d="M131.5 38.5c.4 6 .3 12-.3 17.7-17.3.6-34.6.4-51.6.2-.3 4-.3 8 .1 11.8" stroke="var(--ink-faint)"></path>
+                    <path d="M75.5 64.5c1.4 1.7 2.7 3.4 3.9 5 1.5-1.7 2.9-3.4 4.2-5.1" stroke="var(--ink-faint)"></path>
+                    <path d="M46 70c22.6-2 45.3-1.6 67.5 0 1.2 6.3.9 13-.4 19.4-22.4 1.6-44.8 1.3-66.6-.2-1.3-6.4-1.4-12.8-.5-19.2z" stroke="var(--green)"></path>
+                  </svg>
+                </figure>
+                <p class="piece-label">流程圖</p>
+              </div>
+
+              <!-- 进场时带一点歪斜，对齐那一拍吸附归位 -->
+              <div class="drift">
+                <div class="piece piece-wire">
+                  <i class="ring"></i>
+                  <figure>
+                    <svg class="neat" viewBox="0 0 186 112" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="1" y="1" width="184" height="110" rx="6" stroke="var(--ink-faint)"></rect>
+                      <path d="M1 17h184M52 17v94" stroke="var(--ink-faint)"></path>
+                      <circle cx="10" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <circle cx="18" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <path d="M10 30h30M10 42h22M10 54h27" stroke="var(--ink-faint)" opacity="0.7"></path>
+                      <rect x="63" y="27" width="52" height="7" rx="3.5" stroke="var(--blue)"></rect>
+                      <rect x="63" y="45" width="52" height="34" rx="4" stroke="var(--ink-faint)"></rect>
+                      <rect x="123" y="45" width="52" height="34" rx="4" stroke="var(--ink-faint)"></rect>
+                      <rect x="63" y="89" width="42" height="12" rx="6" stroke="var(--brand)"></rect>
+                    </svg>
+                    <svg class="sketch" viewBox="0 0 186 112" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M2.5 3.5c60-3 120-2.8 181 .3 1.8 35 1.6 70-.4 105-60.5 2.6-120.5 2.2-179.6-.4C1.2 73.6 1.3 38.6 2.5 3.5z" stroke="var(--ink-faint)"></path>
+                      <path d="M2 17.5c61.5-1.6 122.5-1.2 182.5.4" stroke="var(--ink-faint)"></path>
+                      <path d="M52.5 17.8c-.9 31.2-.7 62.4.3 93.4" stroke="var(--ink-faint)"></path>
+                      <circle cx="10" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <circle cx="18" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <path d="M10.5 30.5c10.2-.9 20.3-.7 29.5.3M10 42.5c7.6-.7 15.1-.5 22.2.4M10.5 54.2c9.1-.8 18.1-.6 26.7.3" stroke="var(--ink-faint)" opacity="0.7"></path>
+                      <path d="M63.5 28c17.2-1.3 34.3-1 50.6.4.7 1.9.6 3.9-.3 5.8-16.6 1.1-33.1.9-49.5-.4-.9-1.9-.8-3.9-.8-5.8z" stroke="var(--blue)"></path>
+                      <path d="M64 46c17-1.5 34-1.3 50.5-.2 1.2 10.8 1 21.6-.6 32.4-16.5 1.4-33 1.2-49 .1-1.4-10.7-1.3-21.5-.9-32.3z" stroke="var(--ink-faint)"></path>
+                      <path d="M124 46c17-1.5 34-1.3 50.5-.2 1.2 10.8 1 21.6-.6 32.4-16.5 1.4-33 1.2-49 .1-1.4-10.7-1.3-21.5-.9-32.3z" stroke="var(--ink-faint)"></path>
+                      <path d="M64 90.5c13.5-1.2 27-1 40 .3.8 3.4.7 6.8-.3 10.2-13.2 1-26.4.8-39.2-.4-1-3.3-.9-6.7-.5-10.1z" stroke="var(--brand)"></path>
+                    </svg>
+                  </figure>
+                  <p class="piece-label">線框原型</p>
+                </div>
+              </div>
+
+              <div class="piece piece-mind">
+                <i class="ring"></i>
+                <figure>
+                  <svg class="neat" viewBox="0 0 180 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <rect x="6" y="36" width="52" height="24" rx="12" stroke="var(--brand)"></rect>
+                    <path d="M58 48h20M78 48c0-18 6-27 18-27M78 48c0 18 6 27 18 27M78 48h18" stroke="var(--ink-faint)"></path>
+                    <rect x="96" y="12" width="46" height="18" rx="9" stroke="var(--ink-faint)"></rect>
+                    <rect x="96" y="39" width="60" height="18" rx="9" stroke="var(--ink-faint)"></rect>
+                    <rect x="96" y="66" width="40" height="18" rx="9" stroke="var(--ink-faint)"></rect>
+                  </svg>
+                  <svg class="sketch" viewBox="0 0 180 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7.5 38c16.8-2 33.7-1.8 50 .4 1.4 6.8 1.2 13.7-.6 20.4-16.3 1.9-32.6 1.6-48.4-.5-1.6-6.6-1.5-13.4-1-20.3z" stroke="var(--brand)"></path>
+                    <path d="M58.5 47.5c6.8-.6 13.6-.5 20 .3M78.5 47.8c-.3-17.5 5.5-26.5 17.8-27.2M78.5 48.2c.3 17.5 6 26.6 18 27M78.5 48c6.1-.2 12.2-.1 18.2.2" stroke="var(--ink-faint)"></path>
+                    <path d="M97 13.5c14.9-1.5 29.8-1.3 44 .3.9 5 .8 10.1-.4 15.2-14.5 1.3-29 1.1-43-.2-1-5-.9-10.2-.6-15.3z" stroke="var(--ink-faint)"></path>
+                    <path d="M97 40.5c19.5-1.7 39-1.5 58 .2 1 5.1.8 10.2-.5 15.3-19 1.5-38 1.3-56.6-.2-1.1-5-1-10.2-.9-15.3z" stroke="var(--ink-faint)"></path>
+                    <path d="M97 67.5c12.9-1.4 25.8-1.2 38 .2.9 5 .8 10.2-.4 15.3-12.5 1.3-25 1.1-37-.2-1-5-.9-10.2-.6-15.3z" stroke="var(--ink-faint)"></path>
+                  </svg>
+                </figure>
+                <p class="piece-label">心智圖</p>
+              </div>
+            </div>
+
+            <div class="stage-col">
+              <div class="piece piece-doc">
+                <i class="ring"></i>
+                <span class="doc-name">方案 v3.pdf</span>
+                <figure>
+                  <div class="doc-line" style="width: 100%"></div>
+                  <div class="doc-line" style="width: 88%"></div>
+                  <div class="doc-line" style="width: 94%"></div>
+                  <div class="doc-line" style="width: 62%"></div>
+                  <div class="doc-line" style="width: 90%"></div>
+                  <div class="doc-line" style="width: 76%"></div>
+                  <div class="doc-line" style="width: 84%"></div>
+                </figure>
+                <p class="piece-label">文件預覽</p>
+              </div>
+
+              <div class="piece piece-photo">
+                <i class="ring"></i>
+                <figure>
+                  <!-- 同一张照片复制进左右两半（各自裁剪），切片那一拍两半分开 -->
+                  <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <defs>
+                      <clipPath id="ph-clip-l">
+                        <rect x="0" y="0" width="120" height="92"></rect>
+                      </clipPath>
+                      <clipPath id="ph-clip-r">
+                        <rect x="120" y="0" width="120" height="92"></rect>
+                      </clipPath>
+                    </defs>
+                    <g class="ph-half ph-l" clip-path="url(#ph-clip-l)">
+                      <rect x="20" y="8" width="200" height="76" rx="4" stroke="var(--ink-faint)" stroke-opacity="0.55"></rect>
+                      <path d="M28 78l32-30 26 24 20-16 38 24h-116z" fill="var(--ink-faint)" fill-opacity="0.22" stroke="none"></path>
+                      <circle cx="182" cy="28" r="9" fill="var(--amber)" fill-opacity="0.35" stroke="none"></circle>
+                      <rect class="ph-shade" x="20" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="192" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="8" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="75" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-crop" x="48" y="17" width="144" height="58" stroke="var(--sel)" stroke-dasharray="4 4"></rect>
+                    </g>
+                    <g class="ph-half ph-r" clip-path="url(#ph-clip-r)">
+                      <rect x="20" y="8" width="200" height="76" rx="4" stroke="var(--ink-faint)" stroke-opacity="0.55"></rect>
+                      <path d="M28 78l32-30 26 24 20-16 38 24h-116z" fill="var(--ink-faint)" fill-opacity="0.22" stroke="none"></path>
+                      <circle cx="182" cy="28" r="9" fill="var(--amber)" fill-opacity="0.35" stroke="none"></circle>
+                      <rect class="ph-shade" x="20" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="192" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="8" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="75" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-crop" x="48" y="17" width="144" height="58" stroke="var(--sel)" stroke-dasharray="4 4"></rect>
+                    </g>
+                    <path class="ph-cut" d="M120 4v84" stroke="var(--sel)" stroke-dasharray="5 5"></path>
+                  </svg>
+                </figure>
+                <p class="piece-label">圖片處理</p>
+              </div>
+
+              <div class="stage-group">
+                <div class="piece piece-code">
+                  <i class="ring"></i>
+                  <b>const</b> canvas = <i>useCanvas</i>()<br>
+                  canvas.<i>fit</i>({ padding: <b>48</b> })<br>
+                  <u>// 一萬個元素，仍然是 60fps</u>
+                  <p class="piece-label">程式碼區塊</p>
+                </div>
+
+                <div class="stage-note">
+                  <svg class="note-hook" width="34" height="32" viewBox="0 0 34 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M31 29c-11-3-18-8-21-14-2-4-2-8-1-11"></path>
+                    <path d="M3 8l6-4 4 6"></path>
+                  </svg>
+                  <p>框選、連線、對齊、裁剪、切片、換風格，全在同一張紙上</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 一段「有人正在用这张画布」：框选 → 连线 → 对齐 → 换风格 -->
+            <svg class="link-arrow" viewBox="0 0 72 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path class="la-line" pathLength="1" d="M3 16C22 15 42 9 62 8"></path>
+              <path class="la-head" d="M55 4l7 4-6 5"></path>
+            </svg>
+            <i class="guide"></i>
+            <div class="marquee"></div>
+            <div class="group-box">
+              <i class="handle handle-nw"></i>
+              <i class="handle handle-n"></i>
+              <i class="handle handle-ne"></i>
+              <i class="handle handle-e"></i>
+              <i class="handle handle-se"></i>
+              <i class="handle handle-s"></i>
+              <i class="handle handle-sw"></i>
+              <i class="handle handle-w"></i>
+            </div>
+          </div>
+          <button class="replay" type="button" aria-label="重播示範">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 7A5 5 0 1 1 7 2c1.9 0 3.5.9 4.4 2.4"></path>
+              <path d="M11.8 1.2v3.4H8.5"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ---------- 轻量本地体验 ---------- -->
+    <section class="band local-experience">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4"></path></svg>輕量本機體驗
+        </p>
+        <h2>開啟即用，<br>全本機操作，無需登入！</h2>
+        <p class="band-lede">
+          無需登入，也不用先把檔案搬到雲端。開啟畫布，直接處理電腦裡的圖片、文件和圖表。
+        </p>
+
+        <div class="draw-grid">
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="12" y="18" width="72" height="60" rx="7"></rect>
+                <path d="M12 34h72M23 26h.1M31 26h.1M39 26h.1"></path>
+                <path d="M36 57h24M52 49l8 8-8 8" stroke="var(--blue)"></path>
+              </svg>
+            </figure>
+            <h3>無需登入</h3>
+            <p>不註冊，不選範本。開啟就是一張可編輯的空白畫布。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 14h42l14 14v54H16z"></path>
+                <path d="M58 14v14h14M29 45h30M29 57h24"></path>
+                <path d="M61 65h23M76 57l8 8-8 8" stroke="var(--green)"></path>
+              </svg>
+            </figure>
+            <h3>本機檔案直接操作</h3>
+            <p>圖片、PDF 和圖表直接匯入，在畫布上檢視、編排和繼續處理。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M48 11c14 7 26 11 36 13-1 27-10 47-36 61-26-14-35-34-36-61 10-2 22-6 36-13z"></path>
+                <path d="M31 48l12 12 23-25" stroke="var(--amber)"></path>
+              </svg>
+            </figure>
+            <h3>處理全程留在本機</h3>
+            <p>檔案無需上傳，內容、處理過程和結果都留在自己的裝置裡。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 画得出 ---------- -->
+    <section class="band" id="draw">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>基礎圖形
+        </p>
+        <h2>先把東西畫出來</h2>
+        <p class="band-lede">
+          草圖、正式流程圖、介面原型和腦圖，用的是同一套工具和同一張紙。想法在哪一層，就在哪一層畫，不用先決定這是什麼類型的文件。
+        </p>
+
+        <div class="draw-grid">
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="42" y="10" width="156" height="72" rx="5" stroke="var(--ink-faint)" stroke-dasharray="6 6"></rect>
+                <rect x="14" y="26" width="58" height="26" rx="5" stroke="var(--blue)"></rect>
+                <rect x="92" y="34" width="62" height="28" rx="5" stroke="var(--green)"></rect>
+                <rect x="170" y="20" width="58" height="26" rx="5" stroke="var(--amber)"></rect>
+                <path d="M8 66h224" stroke="var(--ink-faint)" opacity="0.35"></path>
+                <path d="M13 61l-5 5 5 5M227 61l5 5-5 5" stroke="var(--ink-faint)" opacity="0.35"></path>
+              </svg>
+            </figure>
+            <h3>無限畫布</h3>
+            <p>畫布不會畫滿。想到哪畫到哪，縮到 10% 也能一眼看全整張圖。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="12" width="70" height="30" rx="5" stroke="var(--blue)"></rect>
+                <path d="M76 27h22M94 23l5 4-5 4"></path>
+                <path d="M133 12l26 15-26 15-26-15z" stroke="var(--amber)"></path>
+                <path d="M133 42v20H62v10" stroke="var(--ink-faint)"></path>
+                <path d="M58 68l4 5 4-5"></path>
+                <rect x="24" y="56" width="76" height="30" rx="5" stroke="var(--green)"></rect>
+                <path d="M159 27h34M189 23l5 4-5 4"></path>
+                <rect x="196" y="12" width="38" height="30" rx="5" stroke="var(--red)"></rect>
+              </svg>
+            </figure>
+            <h3>流程圖</h3>
+            <p>
+              選好形狀就開始連，連線自己找路徑。版面亂了一鍵重排，不用手動對齊每一根線。
+            </p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="6" width="112" height="80" rx="5" stroke="var(--ink-faint)"></rect>
+                <path d="M6 22h112" stroke="var(--ink-faint)"></path>
+                <circle cx="17" cy="14" r="2.5" stroke="var(--ink-faint)"></circle>
+                <rect x="16" y="34" width="52" height="8" rx="4" stroke="var(--blue)"></rect>
+                <rect x="16" y="50" width="76" height="8" rx="4" stroke="var(--ink-faint)"></rect>
+                <rect x="16" y="66" width="44" height="10" rx="5" stroke="var(--amber)"></rect>
+                <rect x="122" y="6" width="112" height="80" rx="5" stroke="var(--ink-faint)"></rect>
+                <rect x="132" y="16" width="44" height="42" rx="4" stroke="var(--green)"></rect>
+                <rect x="184" y="16" width="42" height="8" rx="4" stroke="var(--ink-faint)"></rect>
+                <rect x="184" y="32" width="32" height="8" rx="4" stroke="var(--ink-faint)"></rect>
+                <rect x="132" y="66" width="94" height="10" rx="5" stroke="var(--ink-faint)"></rect>
+              </svg>
+            </figure>
+            <h3>線框原型</h3>
+            <p>
+              導覽列、表單、卡片、彈跳窗都是現成組件，拖出來就是一屏可講的原型。
+            </p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <!-- 悬停演示：把底部节点拖上去，带着子树的顶部节点让位下来 -->
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="33" width="60" height="26" rx="13" stroke="var(--brand)"></rect>
+                <path d="M66 46h22M88 46c0-24 8-36 22-36M88 46c0 24 8 36 22 36M88 46h22" stroke="var(--ink-faint)"></path>
+                <g class="mm-move">
+                  <rect x="110" y="1" width="76" height="20" rx="10" stroke="var(--ink-faint)"></rect>
+                  <path d="M186 11h12M198 11c0-8 3-11 8-11M198 11c0 8 3 11 8 11" stroke="var(--ink-faint)" opacity="0.5"></path>
+                </g>
+                <rect x="110" y="36" width="94" height="20" rx="10" stroke="var(--ink-faint)"></rect>
+                <rect class="mm-up" x="110" y="71" width="62" height="20" rx="10" stroke="var(--ink-faint)"></rect>
+                <rect class="mm-ring" x="107" y="68" width="68" height="26" rx="13" stroke="var(--sel)" stroke-dasharray="4 4"></rect>
+              </svg>
+            </figure>
+            <h3>心智圖</h3>
+            <p>
+              十二種佈局、八套配色，拖曳一個節點整棵樹自動重排。折疊、批註、邊界和關聯線都在。
+            </p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="10" width="228" height="72" rx="5" stroke="var(--ink-faint)"></rect>
+                <path d="M6 32h228M82 10v72M158 10v72" stroke="var(--ink-faint)"></path>
+                <path d="M20 21h40M96 21h34M172 21h44" stroke="var(--ink-faint)" opacity="0.6"></path>
+                <path d="M20 50h44M96 50h48M172 50h36M20 66h32M96 66h30M172 66h48" stroke="var(--blue)"></path>
+              </svg>
+            </figure>
+            <h3>表格與泳道</h3>
+            <p>行列和職責帶自己保持對齊，加一行不會把整張圖擠歪。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 72c12-38 33-49 50-32s24 38 44 32 33-32 50-44" stroke="var(--brand)"></path>
+                <path d="M8 84c50 6 88-3 130-21" stroke="var(--ink-faint)" opacity="0.45"></path>
+                <circle cx="196" cy="24" r="10" stroke="var(--amber)"></circle>
+                <rect x="14" y="10" width="52" height="22" rx="4" stroke="var(--ink-faint)" opacity="0.45"></rect>
+              </svg>
+            </figure>
+            <h3>手繪風格</h3>
+            <p>草稿的語氣讓人願意提出意見。要交付時，一個開關換成規整線條。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 搬得进 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>導入與轉換
+        </p>
+        <h2>已經寫好的，不用重畫</h2>
+        <p class="band-lede">
+          文件裡的 Mermaid、倉庫裡的 PlantUML、draw.io 和 Visio 的存檔、別處導出的腦圖，拖進來就變成畫布元素。
+        </p>
+
+        <div class="swap" id="swap">
+          <pre class="swap-src"><span class="src-line" style="--d: 0s"><b>graph</b> LR</span>
+<span class="src-line" style="--d: 0.14s">  A[<span>接單</span>] --&gt; B{<span>庫存充足?</span>}</span>
+<span class="src-line" style="--d: 0.28s">  B --&gt;|<i>是</i>| C[<span>出庫</span>]</span>
+<span class="src-line" style="--d: 0.42s">  B --&gt;|<i>否</i>| D[<span>補貨</span>]</span></pre>
+
+          <svg class="swap-arrow" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 13h17M17 8l5 5-5 5"></path>
+          </svg>
+
+          <div class="swap-out">
+            <svg id="swap-svg" width="100%" height="118" viewBox="0 0 238 116" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="轉換後的流程圖：接單、庫存判斷、出庫與補貨四個可編輯元素，其中出庫節點可以直接拖曳">
+              <rect class="draw" pathLength="1" x="1" y="44" width="50" height="26" rx="5" stroke="var(--blue)" style="--d: 0.5s"></rect>
+              <text class="fade" x="26" y="61" style="--d: 0.62s">接單</text>
+              <path class="draw" pathLength="1" d="M51 57h18M65 53l5 4-5 4" stroke="var(--ink-faint)" style="--d: 0.66s"></path>
+              <path class="draw" pathLength="1" d="M110 35l32 22-32 22-32-22z" stroke="var(--amber)" style="--d: 0.78s"></path>
+              <text class="fade fade-small" x="110" y="61" style="--d: 0.92s">
+                庫存充足?
+              </text>
+              <path class="draw" pathLength="1" d="M142 57h20" stroke="var(--ink-faint)" style="--d: 0.98s"></path>
+              <path class="draw" id="ship-link" pathLength="1" d="M162 57V24H175" stroke="var(--ink-faint)" style="--d: 1.06s"></path>
+              <path class="draw" id="ship-tip" pathLength="1" d="M175 20l5 4-5 4" stroke="var(--ink-faint)" style="--d: 1.14s"></path>
+              <path class="draw" pathLength="1" d="M162 57v33h13M170 86l5 4-5 4" stroke="var(--ink-faint)" style="--d: 1.06s"></path>
+              <rect class="draw" pathLength="1" x="182" y="77" width="46" height="26" rx="5" stroke="var(--red)" style="--d: 1.18s"></rect>
+              <text class="fade" x="205" y="94" style="--d: 1.3s">補貨</text>
+              <g class="ship-node" id="ship-node">
+                <rect class="draw" pathLength="1" x="182" y="11" width="46" height="26" rx="5" stroke="var(--green)" style="--d: 1.18s"></rect>
+                <text class="fade" x="205" y="28" style="--d: 1.3s">出庫</text>
+                <g class="ship-sel" aria-hidden="true">
+                  <rect class="ship-ring" x="178" y="7" width="54" height="34"></rect>
+                  <rect class="mh" x="175.5" y="4.5" width="5" height="5"></rect>
+                  <rect class="mh" x="229.5" y="4.5" width="5" height="5"></rect>
+                  <rect class="mh" x="175.5" y="38.5" width="5" height="5"></rect>
+                  <rect class="mh" x="229.5" y="38.5" width="5" height="5"></rect>
+                </g>
+              </g>
+            </svg>
+            <p class="drag-hint" aria-hidden="true">
+              <svg class="hint-hook" width="30" height="24" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 22C12 20 20 14 24 4"></path>
+                <path d="M18 6l6-3 3 6"></path>
+              </svg>
+              <span>這個「出庫」，真的可以拖走</span>
+            </p>
+          </div>
+        </div>
+
+        <p class="swap-claim">
+          右邊這些是<strong>元素，不是圖片</strong>——可以拖走一個節點、改一句文案、換一種配色，再接著往下畫。
+        </p>
+
+        <div class="import-map">
+          <div class="import-group">
+            <p class="import-kind">變成可編輯元素</p>
+            <ul class="chips">
+              <li>Mermaid</li>
+              <li>PlantUML</li>
+              <li>Markdown</li>
+              <li>XMind<i>.xmind</i></li>
+              <li>OPML<i>.opml</i></li>
+              <li>draw.io<i>.drawio ·.dio ·.xml</i></li>
+              <li>Visio<i>.vsdx ·.vsdm ·.vdx</i></li>
+              <li>Excalidraw<i>.excalidraw</i></li>
+            </ul>
+            <p class="import-note">
+              節點、連線、配色都還原成畫布元素，接著改。 PlantUML 引擎跑在你的瀏覽器裡，原始碼不會傳送到任何渲染伺服器。
+            </p>
+          </div>
+          <div class="import-group">
+            <p class="import-kind">原件攤開閱讀</p>
+            <ul class="chips">
+              <li>.pdf</li>
+              <li>.docx</li>
+              <li>.pptx</li>
+              <li>.xlsx</li>
+              <li>.md</li>
+              <li>.txt</li>
+            </ul>
+            <p class="import-note">
+              不轉格式、不丟原件，拖進來就能在畫布上翻頁讀。
+            </p>
+          </div>
+          <div class="import-group">
+            <p class="import-kind">變成高亮程式碼區塊</p>
+            <ul class="chips">
+              <li>.ts</li>
+              <li>.py</li>
+              <li>.go</li>
+              <li>.rs</li>
+              <li>.java</li>
+              <li>.cpp</li>
+              <li>.swift</li>
+              <li>.vue</li>
+              <li>.html</li>
+              <li>.css</li>
+              <li class="chip-more">…共 30+ 種語言</li>
+            </ul>
+            <p class="import-note">
+              高亮跟著語言走，網頁程式碼還能當場渲染出來看。
+            </p>
+          </div>
+        </div>
+
+        <p class="footnote">
+          接不住的也告訴你怎麼辦：舊版二進位 .vsd 會提示先在 Visio 裡另存為 .vsdx；Axure .rp 能辨識出來，並給你「匯出 SVG 再導入」這條路。
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- 看得清 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>文件與程式碼
+        </p>
+        <h2>原件就攤在畫布上</h2>
+        <p class="band-lede">
+          把 PDF、合約、報表或一段程式碼拖進來，它們不是要下載的附件，而是能在畫布上直接翻頁、直接讀取的一塊內容。
+        </p>
+
+        <div class="read-grid">
+          <article class="read-card">
+            <h3>程式碼區塊</h3>
+            <p>
+              語法高亮跟著語言走。寫的是網頁程式碼，畫布上立刻能看到渲染出來的樣子。
+            </p>
+            <div class="sample">
+              <u>// order.ts</u> <b>export const</b> <em>settle</em> =
+              (<em>order</em>: Order) =&gt; { <b>if</b> (!order.paid)
+              <b>return</b> <i>"待支付"</i>; <b>return</b> ship(order); };
+            </div>
+          </article>
+
+          <article class="read-card">
+            <h3>文件預覽</h3>
+            <p>
+              逐頁翻，也能一次鋪上對照。原始文件始終留在這塊元素裡，隨畫布一起分享。
+            </p>
+            <div class="page-strip" aria-hidden="true">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 改得动 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>圖片處理
+        </p>
+        <h2>圖片是素材，不是配件</h2>
+        <p class="band-lede">
+          截圖貼進來往往還要再修一刀。裁掉多餘的、遮住敏感的、把幾張拼成一張，都在畫布上完成，不用來回切圖片工具。
+        </p>
+
+        <div class="photo-row">
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M0 66l38-30 30 22 26-18 56 34z" fill="var(--ink-faint)" opacity="0.28"></path>
+                <circle cx="112" cy="22" r="10" fill="var(--amber)" opacity="0.4"></circle>
+                <g stroke="var(--sel)" stroke-width="1.5" fill="none">
+                  <path d="M40 8v66M110 8v66M12 26h126M12 58h126" opacity="0.55"></path>
+                  <path d="M40 8h6M40 74h6M104 8h6M104 74h6" stroke-width="3"></path>
+                </g>
+              </svg>
+            </figure>
+            <b>裁切</b>
+            <span>拖邊框定構圖，原圖隨時能還原。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M0 66l38-30 30 22 26-18 56 34z" fill="var(--ink-faint)" opacity="0.28"></path>
+                <circle cx="112" cy="22" r="10" fill="var(--amber)" opacity="0.4"></circle>
+                <path d="M50 0v82M100 0v82" stroke="var(--paper)" stroke-width="4"></path>
+                <path d="M50 0v82M100 0v82" stroke="var(--sel)" stroke-width="1.5" stroke-dasharray="4 4"></path>
+              </svg>
+            </figure>
+            <b>切片</b>
+            <span>長圖一刀切成幾段，分開擺、分開講。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M0 66l38-30 30 22 26-18 56 34z" fill="var(--ink-faint)" opacity="0.28"></path>
+                <g fill="var(--ink-faint)" opacity="0.75">
+                  <rect x="86" y="10" width="12" height="12"></rect>
+                  <rect x="98" y="10" width="12" height="12" opacity="0.6"></rect>
+                  <rect x="110" y="10" width="12" height="12" opacity="0.85"></rect>
+                  <rect x="86" y="22" width="12" height="12" opacity="0.55"></rect>
+                  <rect x="98" y="22" width="12" height="12" opacity="0.9"></rect>
+                  <rect x="110" y="22" width="12" height="12" opacity="0.5"></rect>
+                </g>
+              </svg>
+            </figure>
+            <b>馬賽克與摳除</b>
+            <span>遮掉姓名和金額，或直接擦掉一塊背景。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <g stroke="var(--paper)" stroke-width="3" fill="none">
+                  <path d="M75 0v82M0 41h150"></path>
+                </g>
+                <path d="M6 34l22-16 18 13 22-11v18H6z" fill="var(--ink-faint)" opacity="0.3"></path>
+                <circle cx="112" cy="20" r="9" fill="var(--blue)" opacity="0.35"></circle>
+                <path d="M6 76l24-18 20 14 22-12v18H6z" fill="var(--green)" opacity="0.3"></path>
+                <rect x="84" y="50" width="58" height="24" rx="4" fill="var(--amber)" opacity="0.3"></rect>
+              </svg>
+            </figure>
+            <b>拼圖</b>
+            <span>幾張圖按版面合成一張，邊距自動對齊。</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 本地智能图像 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>本機智慧圖像
+        </p>
+        <h2>高清增強與智慧去背</h2>
+        <p class="band-lede">
+          兩項能力全部在你的裝置本機完成。圖片無需上傳，處理過程不離開裝置。
+        </p>
+
+        <div class="photo-row photo-row--featured">
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M8 68l25-24 21 18 20-15v25H8z" fill="var(--ink-faint)" opacity="0.22"></path>
+                <path d="M78 68l25-24 21 18 20-15v25H78z" fill="var(--ink-faint)" opacity="0.48"></path>
+                <circle cx="122" cy="22" r="9" fill="var(--amber)" opacity="0.4"></circle>
+                <path d="M75 8v66" stroke="var(--sel)" stroke-dasharray="4 4"></path>
+                <path d="M65 14l8-6-8-6M85 68l-8 6 8 6" stroke="var(--sel)"></path>
+              </svg>
+            </figure>
+            <b>高清增強</b>
+            <span>放大並修復模糊與壓縮痕跡，讓照片和插圖更清楚。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <g fill="var(--ink-faint)" opacity="0.12">
+                  <path d="M0 0h15v15H0zM30 0h15v15H30zM60 0h15v15H60zM90 0h15v15H90zM120 0h15v15H120z"></path>
+                  <path d="M15 15h15v15H15zM45 15h15v15H45zM75 15h15v15H75zM105 15h15v15H105zM135 15h15v15H135z"></path>
+                  <path d="M0 30h15v15H0zM30 30h15v15H30zM60 30h15v15H60zM90 30h15v15H90zM120 30h15v15H120z"></path>
+                  <path d="M15 45h15v15H15zM45 45h15v15H45zM75 45h15v15H75zM105 45h15v15H105zM135 45h15v15H135z"></path>
+                  <path d="M0 60h15v15H0zM30 60h15v15H30zM60 60h15v15H60zM90 60h15v15H90zM120 60h15v15H120z"></path>
+                </g>
+                <path d="M75 15c12 0 19 8 19 18 0 7-3 12-8 15 12 4 20 13 22 27H42c2-14 10-23 22-27-5-3-8-8-8-15 0-10 7-18 19-18z" fill="var(--blue)" opacity="0.35" stroke="var(--sel)" stroke-width="1.5"></path>
+              </svg>
+            </figure>
+            <b>智慧去背</b>
+            <span>自動辨識人像和物件，一鍵去除背景，邊緣細節也能保留。</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 扛得住 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>大畫布性能
+        </p>
+        <h2>畫滿了也不該卡</h2>
+        <p class="band-lede">
+          畫布用久了會變重，這是所有白板的真問題。我們把它當成會失敗的測試來管：每次改動都在真實瀏覽器裡跑一萬個元素的拖曳和縮放，指標退了就不許發版。
+        </p>
+
+        <div class="bench" id="bench" data-reduced-motion-label="已按系統設定停用動畫" data-live-label="即時" hidden="">
+          <canvas id="bench-canvas" aria-label="一萬個元素的即時畫布示範：可以按住拖曳平移，雙指捏合或按住 Ctrl 加滾輪縮放"></canvas>
+          <div class="bench-hud" aria-hidden="true">
+            <b id="bench-fps">— fps</b>
+            <span>10,000 元素 · 即時渲染</span>
+          </div>
+          <p class="bench-hint" aria-hidden="true">
+            這塊就是一萬個元素：按住拖曳一拖 · 雙指捏合或 ⌘/Ctrl + 滾輪縮放
+          </p>
+        </div>
+
+        <table class="measure">
+          <caption>
+            以下是最近一次通過的基準結果，不是宣傳口徑。
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">場景</th>
+              <th scope="col">實測</th>
+              <th scope="col">意義</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">一萬元素同屏拖曳</th>
+              <td class="num">9.5 ms</td>
+              <td class="note">
+                幀耗時 p95。60fps 的預算是 16.7 ms，還剩一半餘裕。
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">拖曳中的掉幀</th>
+              <td class="num">0.23 %</td>
+              <td class="note">超出 60fps 預算的幀佔比，一千幀裡約兩幀。</td>
+            </tr>
+            <tr>
+              <th scope="row">縮放到 10%</th>
+              <td class="num">5 ms</td>
+              <td class="note">從滾輪輸入到畫面響應，p95。</td>
+            </tr>
+            <tr>
+              <th scope="row">二十張 4K 圖</th>
+              <td class="num">↓ 70 %</td>
+              <td class="note">
+                分級預覽相比全尺寸解碼省下的開銷，快取控制在 192 MiB 內。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="footnote">
+          測量條件：Chromium 150、Apple M1 Max，真實 Canvas2D 渲染路徑，10,000 個全部位於首屏的元素，幀間隔取自
+          <code>performance.now()</code>
+          壁鐘。基準腳本和歷史結果都在開源倉庫。
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- 横向对照 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>橫向對照
+        </p>
+        <h2>我們從 Excalidraw 出發</h2>
+        <p class="band-lede">
+          保留 Excalidraw 熟悉的畫布、手繪風格和檔案相容性，再把腦圖、文件、程式碼、圖片處理與 AI 生成接進同一張畫布。
+        </p>
+
+        <div class="compare-scroll">
+          <table class="compare">
+            <caption>
+              對照組則是基於三個產品 2026 年年中的公開版本。哪天這張表過時了，我們改錶，不改口徑。
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr-only">維度</span></th>
+                <th scope="col" class="us">1NX</th>
+                <th scope="col">Excalidraw</th>
+                <th scope="col">draw.io</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">上手第一步</th>
+                <td class="us">打開就是畫布。不註冊、不選儲存、不挑模板</td>
+                <td>同樣打開即畫</td>
+                <td>先選存放位置、檔案名稱和模板，過三個彈跳窗才見到畫布</td>
+              </tr>
+              <tr>
+                <th scope="row">本機檔案與歷史</th>
+                <td class="us">本機檔案直接開啟、原位儲存，自動保留版本歷史</td>
+                <td>瀏覽器本機儲存；檔案匯入、匯出需手動操作</td>
+                <td>支援本機檔案；歷史能力取決於所選儲存</td>
+              </tr>
+              <tr>
+                <th scope="row">心智圖</th>
+                <td class="us">
+                  原生。十二種佈局，拖曳一個節點整樹重排，XMind 還原到配色
+                </td>
+                <td>沒有原生腦圖，逐一框手動畫</td>
+                <td>樹形佈局，節點位置手動維護</td>
+              </tr>
+              <tr>
+                <th scope="row">文件與程式碼</th>
+                <td class="us">
+                  PDF、Word、PPT、Excel 可翻頁；程式碼高亮並即時渲染
+                </td>
+                <td>文件貼成圖片；程式碼是純文字</td>
+                <td>文件貼圖片或連結；程式碼是純文字</td>
+              </tr>
+              <tr>
+                <th scope="row">圖片處理</th>
+                <td class="us">
+                  裁剪、切片、馬賽克、拼圖、高清增強與智能抠圖，處理留在本機
+                </td>
+                <td>只有裁切</td>
+                <td>基本沒有</td>
+              </tr>
+              <tr>
+                <th scope="row">AI 生成</th>
+                <td class="us">
+                  流程圖、思維導圖、頁面和 PPT 一句話生成，結果繼續可編輯
+                </td>
+                <td>可從文字生成流程圖，結果可編輯</td>
+                <td>可生成和修改圖表，結果可編輯</td>
+              </tr>
+              <tr>
+                <th scope="row">文件互通</th>
+                <td class="us">讀 draw.io、Visio、XMind、Mermaid、PlantUML</td>
+                <td>Mermaid 能轉；draw.io 和腦圖讀不了</td>
+                <td>讀 Visio；腦圖讀不了</td>
+              </tr>
+              <tr>
+                <th scope="row">成品交付</th>
+                <td class="us">匯出 PNG、SVG、PDF、網頁和可編輯 PPTX</td>
+                <td>匯出 PNG、SVG 和原始工程檔案</td>
+                <td>匯出圖片、PDF、HTML 和原始工程檔案</td>
+              </tr>
+              <tr>
+                <th scope="row">性能口徑</th>
+                <td class="us">萬元素基準公開，指標退了不發版</td>
+                <td>沒有公開基準</td>
+                <td>沒有公開基準</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 收尾 ---------- -->
+    <section class="close">
+      <div class="wrap">
+        <h2>下一張圖，從這裡開始</h2>
+        <ol class="hero-steps steps-mini" aria-hidden="true">
+          <li>畫草稿</li>
+          <li>導舊圖</li>
+          <li>攤資料</li>
+          <li>貼程式碼</li>
+          <li>出方案</li>
+        </ol>
+        <p class="close-note">不註冊、不選模板，這一步之後就是畫布。</p>
+        <div class="actions">
+          <a class="btn" href="/">
+            打開一張空畫布
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 10h11M11 6l4 4-4 4"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap foot-row">
+        <span>1NX · 一個工作台，無限連接，倍增效率</span>
+        <a href="/licenses/third-party-notices.html">開源許可</a>
+      </div>
+    </footer>
+
+
+</body></html>

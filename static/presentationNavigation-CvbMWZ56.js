@@ -1,0 +1,1 @@
+const o=".excalidraw-document-presentation-controls, a, button, input, textarea, select",r=n=>{var e;const t=n.target;return t instanceof Element&&t.closest(o)?!1:!((e=window.getSelection())!=null&&e.toString())};export{r as i};

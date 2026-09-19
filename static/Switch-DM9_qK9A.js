@@ -1,0 +1,1 @@
+import{j as a,gh as n}from"./index-iyxIYZmR.js";const x=({title:r,name:o,checked:t,onChange:i,disabled:s=!1})=>a("div",{className:n("Switch",{toggled:t,disabled:s}),children:a("input",{name:o,id:o,"data-tooltip":r,type:"checkbox",checked:t,disabled:s,onChange:()=>i(!t),onKeyDown:l=>{l.key===" "&&i(!t)}})});export{x as S};

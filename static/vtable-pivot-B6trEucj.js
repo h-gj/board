@@ -1,0 +1,1 @@
+class t{static registerComponent(e,n){t._components[e]=n}static getComponent(e){return t._components[e]}static registerFunction(e,n){t._functions[e]=n}static getFunction(e){return t._functions[e]}static registerCellType(e,n){t._cellTypes[e]=n}static getCellType(e){return t._cellTypes[e]}}t._components={},t._functions={},t._cellTypes={};export{t as Factory};

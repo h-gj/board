@@ -1,0 +1,907 @@
+<!DOCTYPE html><html lang="ja-JP" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>1NX · Canvas で何ができるのか?</title>
+    <meta name="description" content="フローチャート、ワイヤーフレームのプロトタイプ、マインド マップ、コード、ドキュメント、写真など、すべてを 1 枚の紙に収めます。同じ無限のキャンバス上でそれらを描画、インポート、および変更します。単一マシンで実行する場合、コンテンツはローカルにのみ存在します。 Mermaid、PlantUML、draw.io、Visio、XMind は編集可能な要素に変換され、p95 9.5 ミリ秒で 10,000 個の要素を同じ画面上にドラッグできます。">
+    <link rel="canonical" href="https://1nx.net/features/ja-jp/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="1NX · Canvas で何ができるのか?">
+    <meta property="og:description" content="フローチャート、ワイヤーフレーム プロトタイプ、マインド マップ、コード、ドキュメント、画像を同じ無限のキャンバス上で描画、インポート、および変更できます。">
+    <meta property="og:url" content="https://1nx.net/features/ja-jp/"><meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://1nx.net/og-image-1nx-20260724.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="preload" href="/Virgil.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+
+    <link rel="alternate" hreflang="en" href="https://1nx.net/features/en/"><link rel="alternate" hreflang="ar-SA" href="https://1nx.net/features/ar-sa/"><link rel="alternate" hreflang="bg-BG" href="https://1nx.net/features/bg-bg/"><link rel="alternate" hreflang="ca-ES" href="https://1nx.net/features/ca-es/"><link rel="alternate" hreflang="cs-CZ" href="https://1nx.net/features/cs-cz/"><link rel="alternate" hreflang="de-DE" href="https://1nx.net/features/de-de/"><link rel="alternate" hreflang="el-GR" href="https://1nx.net/features/el-gr/"><link rel="alternate" hreflang="es-ES" href="https://1nx.net/features/es-es/"><link rel="alternate" hreflang="eu-ES" href="https://1nx.net/features/eu-es/"><link rel="alternate" hreflang="fa-IR" href="https://1nx.net/features/fa-ir/"><link rel="alternate" hreflang="fi-FI" href="https://1nx.net/features/fi-fi/"><link rel="alternate" hreflang="fr-FR" href="https://1nx.net/features/fr-fr/"><link rel="alternate" hreflang="gl-ES" href="https://1nx.net/features/gl-es/"><link rel="alternate" hreflang="he-IL" href="https://1nx.net/features/he-il/"><link rel="alternate" hreflang="hi-IN" href="https://1nx.net/features/hi-in/"><link rel="alternate" hreflang="hu-HU" href="https://1nx.net/features/hu-hu/"><link rel="alternate" hreflang="id-ID" href="https://1nx.net/features/id-id/"><link rel="alternate" hreflang="it-IT" href="https://1nx.net/features/it-it/"><link rel="alternate" hreflang="ja-JP" href="https://1nx.net/features/ja-jp/"><link rel="alternate" hreflang="kab-KAB" href="https://1nx.net/features/kab-kab/"><link rel="alternate" hreflang="kk-KZ" href="https://1nx.net/features/kk-kz/"><link rel="alternate" hreflang="ko-KR" href="https://1nx.net/features/ko-kr/"><link rel="alternate" hreflang="ku-TR" href="https://1nx.net/features/ku-tr/"><link rel="alternate" hreflang="lt-LT" href="https://1nx.net/features/lt-lt/"><link rel="alternate" hreflang="lv-LV" href="https://1nx.net/features/lv-lv/"><link rel="alternate" hreflang="my-MM" href="https://1nx.net/features/my-mm/"><link rel="alternate" hreflang="nb-NO" href="https://1nx.net/features/nb-no/"><link rel="alternate" hreflang="nl-NL" href="https://1nx.net/features/nl-nl/"><link rel="alternate" hreflang="nn-NO" href="https://1nx.net/features/nn-no/"><link rel="alternate" hreflang="oc-FR" href="https://1nx.net/features/oc-fr/"><link rel="alternate" hreflang="pa-IN" href="https://1nx.net/features/pa-in/"><link rel="alternate" hreflang="pl-PL" href="https://1nx.net/features/pl-pl/"><link rel="alternate" hreflang="pt-BR" href="https://1nx.net/features/pt-br/"><link rel="alternate" hreflang="pt-PT" href="https://1nx.net/features/pt-pt/"><link rel="alternate" hreflang="ro-RO" href="https://1nx.net/features/ro-ro/"><link rel="alternate" hreflang="ru-RU" href="https://1nx.net/features/ru-ru/"><link rel="alternate" hreflang="sk-SK" href="https://1nx.net/features/sk-sk/"><link rel="alternate" hreflang="sv-SE" href="https://1nx.net/features/sv-se/"><link rel="alternate" hreflang="sl-SI" href="https://1nx.net/features/sl-si/"><link rel="alternate" hreflang="tr-TR" href="https://1nx.net/features/tr-tr/"><link rel="alternate" hreflang="uk-UA" href="https://1nx.net/features/uk-ua/"><link rel="alternate" hreflang="zh-CN" href="https://1nx.net/features/"><link rel="alternate" hreflang="zh-HK" href="https://1nx.net/features/zh-hk/"><link rel="alternate" hreflang="zh-TW" href="https://1nx.net/features/zh-tw/"><link rel="alternate" hreflang="vi-VN" href="https://1nx.net/features/vi-vn/"><link rel="alternate" hreflang="mr-IN" href="https://1nx.net/features/mr-in/"><link rel="alternate" hreflang="x-default" href="https://1nx.net/features/en/"><link rel="stylesheet" href="/features/page.css">
+    <script src="/features/page.js" defer=""></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a class="mark" href="/">1NX</a>
+        <nav class="top-nav" aria-label="ページナビゲーション">
+          <details class="language-menu" data-language-menu=""><summary class="top-link">言語：日本語</summary><ul><li><a href="/features/en/" hreflang="en" lang="en">English</a></li><li><a href="/features/ar-sa/" hreflang="ar-SA" lang="ar-SA">العربية</a></li><li><a href="/features/bg-bg/" hreflang="bg-BG" lang="bg-BG">Български</a></li><li><a href="/features/ca-es/" hreflang="ca-ES" lang="ca-ES">Català</a></li><li><a href="/features/cs-cz/" hreflang="cs-CZ" lang="cs-CZ">Česky</a></li><li><a href="/features/de-de/" hreflang="de-DE" lang="de-DE">Deutsch</a></li><li><a href="/features/el-gr/" hreflang="el-GR" lang="el-GR">Ελληνικά</a></li><li><a href="/features/es-es/" hreflang="es-ES" lang="es-ES">Español</a></li><li><a href="/features/eu-es/" hreflang="eu-ES" lang="eu-ES">Euskara</a></li><li><a href="/features/fa-ir/" hreflang="fa-IR" lang="fa-IR">فارسی</a></li><li><a href="/features/fi-fi/" hreflang="fi-FI" lang="fi-FI">Suomi</a></li><li><a href="/features/fr-fr/" hreflang="fr-FR" lang="fr-FR">Français</a></li><li><a href="/features/gl-es/" hreflang="gl-ES" lang="gl-ES">Galego</a></li><li><a href="/features/he-il/" hreflang="he-IL" lang="he-IL">עברית</a></li><li><a href="/features/hi-in/" hreflang="hi-IN" lang="hi-IN">हिन्दी</a></li><li><a href="/features/hu-hu/" hreflang="hu-HU" lang="hu-HU">Magyar</a></li><li><a href="/features/id-id/" hreflang="id-ID" lang="id-ID">Bahasa Indonesia</a></li><li><a href="/features/it-it/" hreflang="it-IT" lang="it-IT">Italiano</a></li><li><a href="/features/ja-jp/" hreflang="ja-JP" lang="ja-JP" aria-current="page">日本語</a></li><li><a href="/features/kab-kab/" hreflang="kab-KAB" lang="kab-KAB">Taqbaylit</a></li><li><a href="/features/kk-kz/" hreflang="kk-KZ" lang="kk-KZ">Қазақ тілі</a></li><li><a href="/features/ko-kr/" hreflang="ko-KR" lang="ko-KR">한국어</a></li><li><a href="/features/ku-tr/" hreflang="ku-TR" lang="ku-TR">Kurdî</a></li><li><a href="/features/lt-lt/" hreflang="lt-LT" lang="lt-LT">Lietuvių</a></li><li><a href="/features/lv-lv/" hreflang="lv-LV" lang="lv-LV">Latviešu</a></li><li><a href="/features/my-mm/" hreflang="my-MM" lang="my-MM">Burmese</a></li><li><a href="/features/nb-no/" hreflang="nb-NO" lang="nb-NO">Norsk bokmål</a></li><li><a href="/features/nl-nl/" hreflang="nl-NL" lang="nl-NL">Nederlands</a></li><li><a href="/features/nn-no/" hreflang="nn-NO" lang="nn-NO">Norsk nynorsk</a></li><li><a href="/features/oc-fr/" hreflang="oc-FR" lang="oc-FR">Occitan</a></li><li><a href="/features/pa-in/" hreflang="pa-IN" lang="pa-IN">ਪੰਜਾਬੀ</a></li><li><a href="/features/pl-pl/" hreflang="pl-PL" lang="pl-PL">Polski</a></li><li><a href="/features/pt-br/" hreflang="pt-BR" lang="pt-BR">Português Brasileiro</a></li><li><a href="/features/pt-pt/" hreflang="pt-PT" lang="pt-PT">Português</a></li><li><a href="/features/ro-ro/" hreflang="ro-RO" lang="ro-RO">Română</a></li><li><a href="/features/ru-ru/" hreflang="ru-RU" lang="ru-RU">Русский</a></li><li><a href="/features/sk-sk/" hreflang="sk-SK" lang="sk-SK">Slovenčina</a></li><li><a href="/features/sv-se/" hreflang="sv-SE" lang="sv-SE">Svenska</a></li><li><a href="/features/sl-si/" hreflang="sl-SI" lang="sl-SI">Slovenščina</a></li><li><a href="/features/tr-tr/" hreflang="tr-TR" lang="tr-TR">Türkçe</a></li><li><a href="/features/uk-ua/" hreflang="uk-UA" lang="uk-UA">Українська</a></li><li><a href="/features/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/features/zh-hk/" hreflang="zh-HK" lang="zh-HK">繁體中文（香港）</a></li><li><a href="/features/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/features/vi-vn/" hreflang="vi-VN" lang="vi-VN">Tiếng Việt</a></li><li><a href="/features/mr-in/" hreflang="mr-IN" lang="mr-IN">मराठी</a></li></ul></details>
+          <a class="top-link" href="/">キャンバスを開く</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>一枚の紙、<br>全部を捏造する</h1>
+          <ol class="hero-steps">
+            <li>草案を描く</li>
+            <li>ガイドマップ</li>
+            <li>出店情報</li>
+            <li>コードを貼り付けます</li>
+            <li>計画を立てる</li>
+          </ol>
+          <p class="lede lede-tight">これらはすべて同じキャンバス上で行われます。</p>
+          <div class="actions">
+            <a class="btn" href="/">
+              空のキャンバスを開く
+              <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 10h11M11 6l4 4-4 4"></path>
+              </svg>
+            </a>
+            <a class="btn-quiet" href="#draw">まずは何が描けるか見てみましょう</a>
+          </div>
+          <p class="hero-safe">
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 1.5c2.3 1.1 4.5 1.8 6.5 2.1-.1 5.6-1.2 10-6.4 12.9C2.9 13.7 1.7 9.3 1.5 3.7 3.6 3.3 5.8 2.6 8 1.5z"></path>
+              <path d="M5.2 8.7c.9 1 1.7 1.9 2.4 2.8 1.1-1.9 2.3-3.6 3.6-5" stroke="var(--green)"></path>
+            </svg>
+            <span>1 台のコンピュータで実行する場合、コンテンツは自分のコンピュータにのみ保存され、ネットワーク ストレージや対話は必要ありません。</span>
+          </p>
+          <p class="hero-note">テンプレートを登録したり選択したりせずに、クリックするだけでキャンバスが開きます。</p>
+        </div>
+
+        <!-- 首屏画布片段：本页唯一一处编排动画，之后各节不再重复入场 -->
+        <div class="stage-wrap">
+          <div class="stage" aria-hidden="true">
+            <div class="stage-col">
+              <div class="piece piece-flow">
+                <i class="ring"></i>
+                <figure>
+                  <svg class="neat" viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="8" y="8" width="62" height="30" rx="5" stroke="var(--blue)"></rect>
+                    <path d="M70 23h30" stroke="var(--ink-faint)"></path>
+                    <path d="M96 19l5 4-5 4" stroke="var(--ink-faint)"></path>
+                    <path d="M131 8l28 15-28 15-28-15z" stroke="var(--amber)"></path>
+                    <path d="M131 38v18h-52v12" stroke="var(--ink-faint)"></path>
+                    <path d="M75 64l4 5 4-5" stroke="var(--ink-faint)"></path>
+                    <rect x="44" y="68" width="70" height="22" rx="5" stroke="var(--green)"></rect>
+                  </svg>
+                  <!-- 同一张图的手绘版本：风格切换那一拍与规整版交叉淡入 -->
+                  <svg class="sketch" viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 10c19-2.5 39-2 58-.5 1.5 8.5 1 18-.5 27-19 2-38.5 1.5-57 .5-2-9-1.5-18 0-27z" stroke="var(--blue)"></path>
+                    <path d="M71 23.5c9.5-1 19-.8 28-.5" stroke="var(--ink-faint)"></path>
+                    <path d="M96.5 19.5c2 1.5 3.6 2.8 5 4-1.8 1.5-3.4 2.9-4.8 4.2" stroke="var(--ink-faint)"></path>
+                    <path d="M130.5 8.5c9.8 4.6 19 9.6 28.5 15-9.5 5.2-18.9 10-28 14.7-9.6-4.9-19-9.8-28.3-14.9 9.2-5 18.5-9.9 27.8-14.8z" stroke="var(--amber)"></path>
+                    <path d="M131.5 38.5c.4 6 .3 12-.3 17.7-17.3.6-34.6.4-51.6.2-.3 4-.3 8 .1 11.8" stroke="var(--ink-faint)"></path>
+                    <path d="M75.5 64.5c1.4 1.7 2.7 3.4 3.9 5 1.5-1.7 2.9-3.4 4.2-5.1" stroke="var(--ink-faint)"></path>
+                    <path d="M46 70c22.6-2 45.3-1.6 67.5 0 1.2 6.3.9 13-.4 19.4-22.4 1.6-44.8 1.3-66.6-.2-1.3-6.4-1.4-12.8-.5-19.2z" stroke="var(--green)"></path>
+                  </svg>
+                </figure>
+                <p class="piece-label">フローチャート</p>
+              </div>
+
+              <!-- 进场时带一点歪斜，对齐那一拍吸附归位 -->
+              <div class="drift">
+                <div class="piece piece-wire">
+                  <i class="ring"></i>
+                  <figure>
+                    <svg class="neat" viewBox="0 0 186 112" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="1" y="1" width="184" height="110" rx="6" stroke="var(--ink-faint)"></rect>
+                      <path d="M1 17h184M52 17v94" stroke="var(--ink-faint)"></path>
+                      <circle cx="10" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <circle cx="18" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <path d="M10 30h30M10 42h22M10 54h27" stroke="var(--ink-faint)" opacity="0.7"></path>
+                      <rect x="63" y="27" width="52" height="7" rx="3.5" stroke="var(--blue)"></rect>
+                      <rect x="63" y="45" width="52" height="34" rx="4" stroke="var(--ink-faint)"></rect>
+                      <rect x="123" y="45" width="52" height="34" rx="4" stroke="var(--ink-faint)"></rect>
+                      <rect x="63" y="89" width="42" height="12" rx="6" stroke="var(--brand)"></rect>
+                    </svg>
+                    <svg class="sketch" viewBox="0 0 186 112" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M2.5 3.5c60-3 120-2.8 181 .3 1.8 35 1.6 70-.4 105-60.5 2.6-120.5 2.2-179.6-.4C1.2 73.6 1.3 38.6 2.5 3.5z" stroke="var(--ink-faint)"></path>
+                      <path d="M2 17.5c61.5-1.6 122.5-1.2 182.5.4" stroke="var(--ink-faint)"></path>
+                      <path d="M52.5 17.8c-.9 31.2-.7 62.4.3 93.4" stroke="var(--ink-faint)"></path>
+                      <circle cx="10" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <circle cx="18" cy="9" r="2.2" stroke="var(--ink-faint)"></circle>
+                      <path d="M10.5 30.5c10.2-.9 20.3-.7 29.5.3M10 42.5c7.6-.7 15.1-.5 22.2.4M10.5 54.2c9.1-.8 18.1-.6 26.7.3" stroke="var(--ink-faint)" opacity="0.7"></path>
+                      <path d="M63.5 28c17.2-1.3 34.3-1 50.6.4.7 1.9.6 3.9-.3 5.8-16.6 1.1-33.1.9-49.5-.4-.9-1.9-.8-3.9-.8-5.8z" stroke="var(--blue)"></path>
+                      <path d="M64 46c17-1.5 34-1.3 50.5-.2 1.2 10.8 1 21.6-.6 32.4-16.5 1.4-33 1.2-49 .1-1.4-10.7-1.3-21.5-.9-32.3z" stroke="var(--ink-faint)"></path>
+                      <path d="M124 46c17-1.5 34-1.3 50.5-.2 1.2 10.8 1 21.6-.6 32.4-16.5 1.4-33 1.2-49 .1-1.4-10.7-1.3-21.5-.9-32.3z" stroke="var(--ink-faint)"></path>
+                      <path d="M64 90.5c13.5-1.2 27-1 40 .3.8 3.4.7 6.8-.3 10.2-13.2 1-26.4.8-39.2-.4-1-3.3-.9-6.7-.5-10.1z" stroke="var(--brand)"></path>
+                    </svg>
+                  </figure>
+                  <p class="piece-label">ワイヤーフレームプロトタイプ</p>
+                </div>
+              </div>
+
+              <div class="piece piece-mind">
+                <i class="ring"></i>
+                <figure>
+                  <svg class="neat" viewBox="0 0 180 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <rect x="6" y="36" width="52" height="24" rx="12" stroke="var(--brand)"></rect>
+                    <path d="M58 48h20M78 48c0-18 6-27 18-27M78 48c0 18 6 27 18 27M78 48h18" stroke="var(--ink-faint)"></path>
+                    <rect x="96" y="12" width="46" height="18" rx="9" stroke="var(--ink-faint)"></rect>
+                    <rect x="96" y="39" width="60" height="18" rx="9" stroke="var(--ink-faint)"></rect>
+                    <rect x="96" y="66" width="40" height="18" rx="9" stroke="var(--ink-faint)"></rect>
+                  </svg>
+                  <svg class="sketch" viewBox="0 0 180 96" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7.5 38c16.8-2 33.7-1.8 50 .4 1.4 6.8 1.2 13.7-.6 20.4-16.3 1.9-32.6 1.6-48.4-.5-1.6-6.6-1.5-13.4-1-20.3z" stroke="var(--brand)"></path>
+                    <path d="M58.5 47.5c6.8-.6 13.6-.5 20 .3M78.5 47.8c-.3-17.5 5.5-26.5 17.8-27.2M78.5 48.2c.3 17.5 6 26.6 18 27M78.5 48c6.1-.2 12.2-.1 18.2.2" stroke="var(--ink-faint)"></path>
+                    <path d="M97 13.5c14.9-1.5 29.8-1.3 44 .3.9 5 .8 10.1-.4 15.2-14.5 1.3-29 1.1-43-.2-1-5-.9-10.2-.6-15.3z" stroke="var(--ink-faint)"></path>
+                    <path d="M97 40.5c19.5-1.7 39-1.5 58 .2 1 5.1.8 10.2-.5 15.3-19 1.5-38 1.3-56.6-.2-1.1-5-1-10.2-.9-15.3z" stroke="var(--ink-faint)"></path>
+                    <path d="M97 67.5c12.9-1.4 25.8-1.2 38 .2.9 5 .8 10.2-.4 15.3-12.5 1.3-25 1.1-37-.2-1-5-.9-10.2-.6-15.3z" stroke="var(--ink-faint)"></path>
+                  </svg>
+                </figure>
+                <p class="piece-label">マインドマップ</p>
+              </div>
+            </div>
+
+            <div class="stage-col">
+              <div class="piece piece-doc">
+                <i class="ring"></i>
+                <span class="doc-name">ソリューション v3.pdf</span>
+                <figure>
+                  <div class="doc-line" style="width: 100%"></div>
+                  <div class="doc-line" style="width: 88%"></div>
+                  <div class="doc-line" style="width: 94%"></div>
+                  <div class="doc-line" style="width: 62%"></div>
+                  <div class="doc-line" style="width: 90%"></div>
+                  <div class="doc-line" style="width: 76%"></div>
+                  <div class="doc-line" style="width: 84%"></div>
+                </figure>
+                <p class="piece-label">ドキュメントのプレビュー</p>
+              </div>
+
+              <div class="piece piece-photo">
+                <i class="ring"></i>
+                <figure>
+                  <!-- 同一张照片复制进左右两半（各自裁剪），切片那一拍两半分开 -->
+                  <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <defs>
+                      <clipPath id="ph-clip-l">
+                        <rect x="0" y="0" width="120" height="92"></rect>
+                      </clipPath>
+                      <clipPath id="ph-clip-r">
+                        <rect x="120" y="0" width="120" height="92"></rect>
+                      </clipPath>
+                    </defs>
+                    <g class="ph-half ph-l" clip-path="url(#ph-clip-l)">
+                      <rect x="20" y="8" width="200" height="76" rx="4" stroke="var(--ink-faint)" stroke-opacity="0.55"></rect>
+                      <path d="M28 78l32-30 26 24 20-16 38 24h-116z" fill="var(--ink-faint)" fill-opacity="0.22" stroke="none"></path>
+                      <circle cx="182" cy="28" r="9" fill="var(--amber)" fill-opacity="0.35" stroke="none"></circle>
+                      <rect class="ph-shade" x="20" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="192" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="8" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="75" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-crop" x="48" y="17" width="144" height="58" stroke="var(--sel)" stroke-dasharray="4 4"></rect>
+                    </g>
+                    <g class="ph-half ph-r" clip-path="url(#ph-clip-r)">
+                      <rect x="20" y="8" width="200" height="76" rx="4" stroke="var(--ink-faint)" stroke-opacity="0.55"></rect>
+                      <path d="M28 78l32-30 26 24 20-16 38 24h-116z" fill="var(--ink-faint)" fill-opacity="0.22" stroke="none"></path>
+                      <circle cx="182" cy="28" r="9" fill="var(--amber)" fill-opacity="0.35" stroke="none"></circle>
+                      <rect class="ph-shade" x="20" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="192" y="8" width="28" height="76" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="8" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-shade" x="48" y="75" width="144" height="9" fill="var(--paper)" fill-opacity="0.78" stroke="none"></rect>
+                      <rect class="ph-crop" x="48" y="17" width="144" height="58" stroke="var(--sel)" stroke-dasharray="4 4"></rect>
+                    </g>
+                    <path class="ph-cut" d="M120 4v84" stroke="var(--sel)" stroke-dasharray="5 5"></path>
+                  </svg>
+                </figure>
+                <p class="piece-label">画像処理</p>
+              </div>
+
+              <div class="stage-group">
+                <div class="piece piece-code">
+                  <i class="ring"></i>
+                  <b>const</b> canvas = <i>useCanvas</i>()<br>
+                  canvas.<i>fit</i>({ padding: <b>48</b> })<br>
+                  <u>// 1 万要素でも 60fps</u>
+                  <p class="piece-label">コードブロック</p>
+                </div>
+
+                <div class="stage-note">
+                  <svg class="note-hook" width="34" height="32" viewBox="0 0 34 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M31 29c-11-3-18-8-21-14-2-4-2-8-1-11"></path>
+                    <path d="M3 8l6-4 4 6"></path>
+                  </svg>
+                  <p>フレームの選択、接続、配置、トリミング、スライス、スタイルの変更をすべて同じ紙上で実行</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 一段「有人正在用这张画布」：框选 → 连线 → 对齐 → 换风格 -->
+            <svg class="link-arrow" viewBox="0 0 72 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path class="la-line" pathLength="1" d="M3 16C22 15 42 9 62 8"></path>
+              <path class="la-head" d="M55 4l7 4-6 5"></path>
+            </svg>
+            <i class="guide"></i>
+            <div class="marquee"></div>
+            <div class="group-box">
+              <i class="handle handle-nw"></i>
+              <i class="handle handle-n"></i>
+              <i class="handle handle-ne"></i>
+              <i class="handle handle-e"></i>
+              <i class="handle handle-se"></i>
+              <i class="handle handle-s"></i>
+              <i class="handle handle-sw"></i>
+              <i class="handle handle-w"></i>
+            </div>
+          </div>
+          <button class="replay" type="button" aria-label="デモを再生する">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 7A5 5 0 1 1 7 2c1.9 0 3.5.9 4.4 2.4"></path>
+              <path d="M11.8 1.2v3.4H8.5"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ---------- 轻量本地体验 ---------- -->
+    <section class="band local-experience">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4"></path></svg>軽量なローカル体験
+        </p>
+        <h2>開いて使用すると、<br>すべてローカル操作で、ログインは不要です。</h2>
+        <p class="band-lede">
+          最初にログインしたり、ファイルをクラウドに移動したりする必要はありません。キャンバスを開いて、コンピューターから画像、ドキュメント、グラフを直接操作します。
+        </p>
+
+        <div class="draw-grid">
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="12" y="18" width="72" height="60" rx="7"></rect>
+                <path d="M12 34h72M23 26h.1M31 26h.1M39 26h.1"></path>
+                <path d="M36 57h24M52 49l8 8-8 8" stroke="var(--blue)"></path>
+              </svg>
+            </figure>
+            <h3>ログインは不要です</h3>
+            <p>登録もテンプレートの選択も必要ありません。編集可能な空のキャンバスが開きます。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 14h42l14 14v54H16z"></path>
+                <path d="M58 14v14h14M29 45h30M29 57h24"></path>
+                <path d="M61 65h23M76 57l8 8-8 8" stroke="var(--green)"></path>
+              </svg>
+            </figure>
+            <h3>ローカルファイルの直接操作</h3>
+            <p>画像、PDF、チャートを直接インポートして表示、整理し、キャンバス上で作業を続行します。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M48 11c14 7 26 11 36 13-1 27-10 47-36 61-26-14-35-34-36-61 10-2 22-6 36-13z"></path>
+                <path d="M31 48l12 12 23-25" stroke="var(--amber)"></path>
+              </svg>
+            </figure>
+            <h3>プロセス全体がローカル マシン上に残ります</h3>
+            <p>ファイルをアップロードする必要はなく、コンテンツ、処理、結果は自分のデバイスに残ります。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 画得出 ---------- -->
+    <section class="band" id="draw">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>基本的なグラフィックス
+        </p>
+        <h2>最初に物事を描く</h2>
+        <p class="band-lede">
+          スケッチ、正式なフローチャート、インターフェイスのプロトタイプ、マインド マップはすべて、同じツール セットと同じ用紙を使用します。ファイルの種類を決めることなく、アイデアが浮かんだレイヤーに描画します。
+        </p>
+
+        <div class="draw-grid">
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="42" y="10" width="156" height="72" rx="5" stroke="var(--ink-faint)" stroke-dasharray="6 6"></rect>
+                <rect x="14" y="26" width="58" height="26" rx="5" stroke="var(--blue)"></rect>
+                <rect x="92" y="34" width="62" height="28" rx="5" stroke="var(--green)"></rect>
+                <rect x="170" y="20" width="58" height="26" rx="5" stroke="var(--amber)"></rect>
+                <path d="M8 66h224" stroke="var(--ink-faint)" opacity="0.35"></path>
+                <path d="M13 61l-5 5 5 5M227 61l5 5-5 5" stroke="var(--ink-faint)" opacity="0.35"></path>
+              </svg>
+            </figure>
+            <h3>無限のキャンバス</h3>
+            <p>キャンバスは縁まで埋まりません。好きな場所に描画すると、10% に拡大して全体を一目で確認できます。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="12" width="70" height="30" rx="5" stroke="var(--blue)"></rect>
+                <path d="M76 27h22M94 23l5 4-5 4"></path>
+                <path d="M133 12l26 15-26 15-26-15z" stroke="var(--amber)"></path>
+                <path d="M133 42v20H62v10" stroke="var(--ink-faint)"></path>
+                <path d="M58 68l4 5 4-5"></path>
+                <rect x="24" y="56" width="76" height="30" rx="5" stroke="var(--green)"></rect>
+                <path d="M159 27h34M189 23l5 4-5 4"></path>
+                <rect x="196" y="12" width="38" height="30" rx="5" stroke="var(--red)"></rect>
+              </svg>
+            </figure>
+            <h3>フローチャート</h3>
+            <p>
+              形状を選択して接続を開始するだけです。自分で道を見つけてください。乱れたレイアウトはワンクリックで再配置でき、手動で各行を揃える必要はありません。
+            </p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="6" width="112" height="80" rx="5" stroke="var(--ink-faint)"></rect>
+                <path d="M6 22h112" stroke="var(--ink-faint)"></path>
+                <circle cx="17" cy="14" r="2.5" stroke="var(--ink-faint)"></circle>
+                <rect x="16" y="34" width="52" height="8" rx="4" stroke="var(--blue)"></rect>
+                <rect x="16" y="50" width="76" height="8" rx="4" stroke="var(--ink-faint)"></rect>
+                <rect x="16" y="66" width="44" height="10" rx="5" stroke="var(--amber)"></rect>
+                <rect x="122" y="6" width="112" height="80" rx="5" stroke="var(--ink-faint)"></rect>
+                <rect x="132" y="16" width="44" height="42" rx="4" stroke="var(--green)"></rect>
+                <rect x="184" y="16" width="42" height="8" rx="4" stroke="var(--ink-faint)"></rect>
+                <rect x="184" y="32" width="32" height="8" rx="4" stroke="var(--ink-faint)"></rect>
+                <rect x="132" y="66" width="94" height="10" rx="5" stroke="var(--ink-faint)"></rect>
+              </svg>
+            </figure>
+            <h3>ワイヤーフレームプロトタイプ</h3>
+            <p>
+              ナビゲーション バー、フォーム、カード、ポップアップ ウィンドウはすべて既製のコンポーネントです。それらをドラッグして 1 画面のプロトタイプを作成します。
+            </p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <!-- 悬停演示：把底部节点拖上去，带着子树的顶部节点让位下来 -->
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="33" width="60" height="26" rx="13" stroke="var(--brand)"></rect>
+                <path d="M66 46h22M88 46c0-24 8-36 22-36M88 46c0 24 8 36 22 36M88 46h22" stroke="var(--ink-faint)"></path>
+                <g class="mm-move">
+                  <rect x="110" y="1" width="76" height="20" rx="10" stroke="var(--ink-faint)"></rect>
+                  <path d="M186 11h12M198 11c0-8 3-11 8-11M198 11c0 8 3 11 8 11" stroke="var(--ink-faint)" opacity="0.5"></path>
+                </g>
+                <rect x="110" y="36" width="94" height="20" rx="10" stroke="var(--ink-faint)"></rect>
+                <rect class="mm-up" x="110" y="71" width="62" height="20" rx="10" stroke="var(--ink-faint)"></rect>
+                <rect class="mm-ring" x="107" y="68" width="68" height="26" rx="13" stroke="var(--sel)" stroke-dasharray="4 4"></rect>
+              </svg>
+            </figure>
+            <h3>マインドマップ</h3>
+            <p>
+              12 のレイアウト、8 つのカラー セットでノードをドラッグすると、ツリー全体が自動的に再配置されます。折り目、注釈、境界線、関連線がすべて存在します。
+            </p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="10" width="228" height="72" rx="5" stroke="var(--ink-faint)"></rect>
+                <path d="M6 32h228M82 10v72M158 10v72" stroke="var(--ink-faint)"></path>
+                <path d="M20 21h40M96 21h34M172 21h44" stroke="var(--ink-faint)" opacity="0.6"></path>
+                <path d="M20 50h44M96 50h48M172 50h36M20 66h32M96 66h30M172 66h48" stroke="var(--blue)"></path>
+              </svg>
+            </figure>
+            <h3>テーブルとスイムレーン</h3>
+            <p>責任の行と線は常に整列しており、線を追加しても全体像が歪むことはありません。</p>
+          </article>
+
+          <article class="plot">
+            <figure aria-hidden="true">
+              <svg viewBox="0 0 240 92" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 72c12-38 33-49 50-32s24 38 44 32 33-32 50-44" stroke="var(--brand)"></path>
+                <path d="M8 84c50 6 88-3 130-21" stroke="var(--ink-faint)" opacity="0.45"></path>
+                <circle cx="196" cy="24" r="10" stroke="var(--amber)"></circle>
+                <rect x="14" y="10" width="52" height="22" rx="4" stroke="var(--ink-faint)" opacity="0.45"></rect>
+              </svg>
+            </figure>
+            <h3>手描きスタイル</h3>
+            <p>草案の論調についてはコメントを求めている。スイッチは通常の回線に置き換えられて納品されます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 搬得进 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>インポートと変換
+        </p>
+        <h2>すでに書かれているので書き直す必要はありません</h2>
+        <p class="band-lede">
+          ドキュメント内の Mermaid、ウェアハウス内の PlantUML、draw.io と Visio のアーカイブ、および他の場所にエクスポートされたマインド マップをドラッグしてキャンバス要素に変えることができます。
+        </p>
+
+        <div class="swap" id="swap">
+          <pre class="swap-src"><span class="src-line" style="--d: 0s"><b>graph</b> LR</span>
+<span class="src-line" style="--d: 0.14s">  A[<span>注文を受ける</span>] --&gt; B{<span>在庫は十分ですか？</span>}</span>
+<span class="src-line" style="--d: 0.28s">  B --&gt;|<i>はい</i>| C[<span>倉庫から出た</span>]</span>
+<span class="src-line" style="--d: 0.42s">  B --&gt;|<i>いいえ</i>| D[<span>再入荷</span>]</span></pre>
+
+          <svg class="swap-arrow" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 13h17M17 8l5 5-5 5"></path>
+          </svg>
+
+          <div class="swap-out">
+            <svg id="swap-svg" width="100%" height="118" viewBox="0 0 238 116" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-label="変換されたフローチャート：受注、在庫判断、出荷、補充の4つの編集要素、そのうち出荷ノードを直接ドラッグ可能">
+              <rect class="draw" pathLength="1" x="1" y="44" width="50" height="26" rx="5" stroke="var(--blue)" style="--d: 0.5s"></rect>
+              <text class="fade" x="26" y="61" style="--d: 0.62s">注文を受ける</text>
+              <path class="draw" pathLength="1" d="M51 57h18M65 53l5 4-5 4" stroke="var(--ink-faint)" style="--d: 0.66s"></path>
+              <path class="draw" pathLength="1" d="M110 35l32 22-32 22-32-22z" stroke="var(--amber)" style="--d: 0.78s"></path>
+              <text class="fade fade-small" x="110" y="61" style="--d: 0.92s">
+                在庫は十分ですか？
+              </text>
+              <path class="draw" pathLength="1" d="M142 57h20" stroke="var(--ink-faint)" style="--d: 0.98s"></path>
+              <path class="draw" id="ship-link" pathLength="1" d="M162 57V24H175" stroke="var(--ink-faint)" style="--d: 1.06s"></path>
+              <path class="draw" id="ship-tip" pathLength="1" d="M175 20l5 4-5 4" stroke="var(--ink-faint)" style="--d: 1.14s"></path>
+              <path class="draw" pathLength="1" d="M162 57v33h13M170 86l5 4-5 4" stroke="var(--ink-faint)" style="--d: 1.06s"></path>
+              <rect class="draw" pathLength="1" x="182" y="77" width="46" height="26" rx="5" stroke="var(--red)" style="--d: 1.18s"></rect>
+              <text class="fade" x="205" y="94" style="--d: 1.3s">再入荷</text>
+              <g class="ship-node" id="ship-node">
+                <rect class="draw" pathLength="1" x="182" y="11" width="46" height="26" rx="5" stroke="var(--green)" style="--d: 1.18s"></rect>
+                <text class="fade" x="205" y="28" style="--d: 1.3s">倉庫から出た</text>
+                <g class="ship-sel" aria-hidden="true">
+                  <rect class="ship-ring" x="178" y="7" width="54" height="34"></rect>
+                  <rect class="mh" x="175.5" y="4.5" width="5" height="5"></rect>
+                  <rect class="mh" x="229.5" y="4.5" width="5" height="5"></rect>
+                  <rect class="mh" x="175.5" y="38.5" width="5" height="5"></rect>
+                  <rect class="mh" x="229.5" y="38.5" width="5" height="5"></rect>
+                </g>
+              </g>
+            </svg>
+            <p class="drag-hint" aria-hidden="true">
+              <svg class="hint-hook" width="30" height="24" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 22C12 20 20 14 24 4"></path>
+                <path d="M18 6l6-3 3 6"></path>
+              </svg>
+              <span>この「デク」は本当に牽引できるんです</span>
+            </p>
+          </div>
+        </div>
+
+        <p class="swap-claim">
+          これらは右側にあります<strong>画像ではなく要素</strong>——ノードをドラッグして遠ざけ、コピーライティングの文章を変更し、色を変更して、描画を続けることができます。
+        </p>
+
+        <div class="import-map">
+          <div class="import-group">
+            <p class="import-kind">編集可能な要素になる</p>
+            <ul class="chips">
+              <li>Mermaid</li>
+              <li>PlantUML</li>
+              <li>Markdown</li>
+              <li>XMind<i>.xmind</i></li>
+              <li>OPML<i>.opml</i></li>
+              <li>draw.io<i>.drawio ·.dio ·.xml</i></li>
+              <li>Visio<i>.vsdx ·.vsdm ·.vdx</i></li>
+              <li>Excalidraw<i>.excalidraw</i></li>
+            </ul>
+            <p class="import-note">
+              ノード、接続、色はすべてキャンバス要素に復元され、変更されます。 PlantUML エンジンはブラウザ内で実行され、ソース コードはレンダリング サーバーに送信されません。
+            </p>
+          </div>
+          <div class="import-group">
+            <p class="import-kind">原本を開いて読んでください</p>
+            <ul class="chips">
+              <li>.pdf</li>
+              <li>.docx</li>
+              <li>.pptx</li>
+              <li>.xlsx</li>
+              <li>.md</li>
+              <li>.txt</li>
+            </ul>
+            <p class="import-note">
+              形式を変換したり、元のファイルを紛失したりする必要はなく、ドラッグするだけでキャンバス上でページをめくって読むことができます。
+            </p>
+          </div>
+          <div class="import-group">
+            <p class="import-kind">強調表示されたコード ブロックに変換します</p>
+            <ul class="chips">
+              <li>.ts</li>
+              <li>.py</li>
+              <li>.go</li>
+              <li>.rs</li>
+              <li>.java</li>
+              <li>.cpp</li>
+              <li>.swift</li>
+              <li>.vue</li>
+              <li>.html</li>
+              <li>.css</li>
+              <li class="chip-more">…合計 30 以上の言語</li>
+            </ul>
+            <p class="import-note">
+              ハイライト表示は言語に従い、Web ページのコードをその場でレンダリングして表示できます。
+            </p>
+          </div>
+        </div>
+
+        <p class="footnote">
+          バイナリ .vsd の古いバージョンでは、まず Visio で .vsdx として保存するように求められます。 Axure .rp はそれを認識し、「SVG をエクスポートしてインポート」のパスを提供します。
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- 看得清 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>ドキュメントとコード
+        </p>
+        <h2>キャンバス上にオリジナルが広がる</h2>
+        <p class="band-lede">
+          PDF、契約書、レポート、またはコードの一部をドラッグします。これらはダウンロードする添付ファイルではなく、キャンバス上で直接ページングして読み取ることができるコンテンツです。
+        </p>
+
+        <div class="read-grid">
+          <article class="read-card">
+            <h3>コードブロック</h3>
+            <p>
+              構文の強調表示は言語に従います。書かれているのはWebコードであり、レンダリングはキャンバス上ですぐに見ることができます。
+            </p>
+            <div class="sample">
+              <u>// order.ts</u> <b>export const</b> <em>settle</em> =
+              (<em>order</em>: Order) =&gt; { <b>if</b> (!order.paid)
+              <b>return</b> <i>「支払われるべき」</i>; <b>return</b> ship(order); };
+            </div>
+          </article>
+
+          <article class="read-card">
+            <h3>ドキュメントのプレビュー</h3>
+            <p>
+              ページをめくって一度に比較できます。元のファイルは常にこの要素内に残り、キャンバスと共有されます。
+            </p>
+            <div class="page-strip" aria-hidden="true">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 改得动 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>画像処理
+        </p>
+        <h2>写真は素材であり、添付ファイルではありません</h2>
+        <p class="band-lede">
+          多くの場合、スクリーンショットは投稿後に編集する必要があります。画像ツールを使用して前後に切り取ることなく、キャンバス上で余分な部分を切り取り、デリケートな部分をカバーし、複数の写真を 1 つに結合します。
+        </p>
+
+        <div class="photo-row">
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M0 66l38-30 30 22 26-18 56 34z" fill="var(--ink-faint)" opacity="0.28"></path>
+                <circle cx="112" cy="22" r="10" fill="var(--amber)" opacity="0.4"></circle>
+                <g stroke="var(--sel)" stroke-width="1.5" fill="none">
+                  <path d="M40 8v66M110 8v66M12 26h126M12 58h126" opacity="0.55"></path>
+                  <path d="M40 8h6M40 74h6M104 8h6M104 74h6" stroke-width="3"></path>
+                </g>
+              </svg>
+            </figure>
+            <b>作物</b>
+            <span>フレームをドラッグして構図を定義すると、いつでも元の画像に戻すことができます。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M0 66l38-30 30 22 26-18 56 34z" fill="var(--ink-faint)" opacity="0.28"></path>
+                <circle cx="112" cy="22" r="10" fill="var(--amber)" opacity="0.4"></circle>
+                <path d="M50 0v82M100 0v82" stroke="var(--paper)" stroke-width="4"></path>
+                <path d="M50 0v82M100 0v82" stroke="var(--sel)" stroke-width="1.5" stroke-dasharray="4 4"></path>
+              </svg>
+            </figure>
+            <b>スライス</b>
+            <span>長い写真をいくつかのセクションに切り分けて表示し、個別に説明します。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M0 66l38-30 30 22 26-18 56 34z" fill="var(--ink-faint)" opacity="0.28"></path>
+                <g fill="var(--ink-faint)" opacity="0.75">
+                  <rect x="86" y="10" width="12" height="12"></rect>
+                  <rect x="98" y="10" width="12" height="12" opacity="0.6"></rect>
+                  <rect x="110" y="10" width="12" height="12" opacity="0.85"></rect>
+                  <rect x="86" y="22" width="12" height="12" opacity="0.55"></rect>
+                  <rect x="98" y="22" width="12" height="12" opacity="0.9"></rect>
+                  <rect x="110" y="22" width="12" height="12" opacity="0.5"></rect>
+                </g>
+              </svg>
+            </figure>
+            <b>モザイクと切り抜き</b>
+            <span>名前と金額をブロックするか、単に背景の一部を消去します。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <g stroke="var(--paper)" stroke-width="3" fill="none">
+                  <path d="M75 0v82M0 41h150"></path>
+                </g>
+                <path d="M6 34l22-16 18 13 22-11v18H6z" fill="var(--ink-faint)" opacity="0.3"></path>
+                <circle cx="112" cy="20" r="9" fill="var(--blue)" opacity="0.35"></circle>
+                <path d="M6 76l24-18 20 14 22-12v18H6z" fill="var(--green)" opacity="0.3"></path>
+                <rect x="84" y="50" width="58" height="24" rx="4" fill="var(--amber)" opacity="0.3"></rect>
+              </svg>
+            </figure>
+            <b>パズル</b>
+            <span>複数の写真をレイアウトに合わせて1枚に結合し、余白も自動で調整されます。</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 本地智能图像 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>ローカルスマートイメージ
+        </p>
+        <h2>HD エンハンスメントとインテリジェントなカットアウト</h2>
+        <p class="band-lede">
+          どちらの機能もデバイス上でローカルに完了します。画像をアップロードする必要がなく、処理プロセスがスムーズです。
+        </p>
+
+        <div class="photo-row photo-row--featured">
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <path d="M8 68l25-24 21 18 20-15v25H8z" fill="var(--ink-faint)" opacity="0.22"></path>
+                <path d="M78 68l25-24 21 18 20-15v25H78z" fill="var(--ink-faint)" opacity="0.48"></path>
+                <circle cx="122" cy="22" r="9" fill="var(--amber)" opacity="0.4"></circle>
+                <path d="M75 8v66" stroke="var(--sel)" stroke-dasharray="4 4"></path>
+                <path d="M65 14l8-6-8-6M85 68l-8 6 8 6" stroke="var(--sel)"></path>
+              </svg>
+            </figure>
+            <b>HD強化</b>
+            <span>ズームインしてぼやけや圧縮アーティファクトを修正し、写真やイラストをより鮮明にします。</span>
+          </article>
+
+          <article class="photo">
+            <figure aria-hidden="true">
+              <svg width="100%" height="82" viewBox="0 0 150 82" fill="none">
+                <rect width="150" height="82" fill="var(--sunk)"></rect>
+                <g fill="var(--ink-faint)" opacity="0.12">
+                  <path d="M0 0h15v15H0zM30 0h15v15H30zM60 0h15v15H60zM90 0h15v15H90zM120 0h15v15H120z"></path>
+                  <path d="M15 15h15v15H15zM45 15h15v15H45zM75 15h15v15H75zM105 15h15v15H105zM135 15h15v15H135z"></path>
+                  <path d="M0 30h15v15H0zM30 30h15v15H30zM60 30h15v15H60zM90 30h15v15H90zM120 30h15v15H120z"></path>
+                  <path d="M15 45h15v15H15zM45 45h15v15H45zM75 45h15v15H75zM105 45h15v15H105zM135 45h15v15H135z"></path>
+                  <path d="M0 60h15v15H0zM30 60h15v15H30zM60 60h15v15H60zM90 60h15v15H90zM120 60h15v15H120z"></path>
+                </g>
+                <path d="M75 15c12 0 19 8 19 18 0 7-3 12-8 15 12 4 20 13 22 27H42c2-14 10-23 22-27-5-3-8-8-8-15 0-10 7-18 19-18z" fill="var(--blue)" opacity="0.35" stroke="var(--sel)" stroke-width="1.5"></path>
+              </svg>
+            </figure>
+            <b>スマートなカットアウト</b>
+            <span>ポートレートやオブジェクトを自動的に認識し、ワンクリックで背景を削除し、エッジの詳細を保持します。</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 扛得住 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>大きなキャンバスのパフォーマンス
+        </p>
+        <h2>絵がいっぱいになっても動かないはずです。</h2>
+        <p class="band-lede">
+          キャンバスは時間の経過とともに重くなりますが、これはすべてのホワイトボードに共通する問題です。これを失敗するテストとして扱います。変更を加えるたびに、実際のブラウザで 10,000 個の要素のドラッグとズームを実行します。インジケーターが下がった場合、それをリリースすることはできません。
+        </p>
+
+        <div class="bench" id="bench" data-reduced-motion-label="システム設定によりアニメーションが無効になっています" data-live-label="リアルタイム" hidden="">
+          <canvas id="bench-canvas" aria-label="10,000 要素のリアルタイム キャンバス デモンストレーション: 押してドラッグしてパンするか、2 本の指でピンチするか、Ctrl キーを押してスクロール ホイールを使用してズームできます。"></canvas>
+          <div class="bench-hud" aria-hidden="true">
+            <b id="bench-fps">— fps</b>
+            <span>10,000 要素 · リアルタイム レンダリング</span>
+          </div>
+          <p class="bench-hint" aria-hidden="true">
+            この作品には 10,000 の要素があります: 押してドラッグするか、2 本の指でピンチするか、⌘/Ctrl + スクロール ホイールでズームします
+          </p>
+        </div>
+
+        <table class="measure">
+          <caption>
+            以下は、宣伝ではなく、合格した最新のベンチマーク結果です。
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">シーン</th>
+              <th scope="col">実測値</th>
+              <th scope="col">意味</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">同じ画面上で 10,000 個の要素をドラッグ アンド ドロップ</th>
+              <td class="num">9.5 ms</td>
+              <td class="note">
+                フレームタイムはp95でした。 60fps のバジェットは 16.7 ミリ秒で、残り半分が残っていました。
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">ドラッグ中にフレームがドロップする</th>
+              <td class="num">0.23 %</td>
+              <td class="note">60fpsの予算を超えるフレーム率は1,000フレーム中2フレーム程度です。</td>
+            </tr>
+            <tr>
+              <th scope="row">10%にズーム</th>
+              <td class="num">5 ms</td>
+              <td class="note">ホイール入力から画面応答まで、p95。</td>
+            </tr>
+            <tr>
+              <th scope="row">4K 画像 20 枚</th>
+              <td class="num">↓ 70 %</td>
+              <td class="note">
+                定格プレビューでは、フルサイズのデコードに比べてオーバーヘッドが節約され、キャッシュは 192 MiB 以内に制御されます。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="footnote">
+          測定条件：Chromium 150、Apple M1 Max、実際のCanvas2Dレンダリングパス、スクロールせずに見える部分すべて10,000要素、フレーム間隔は以下から取得
+          <code>performance.now()</code>
+          壁掛け時計。ベンチマーク スクリプトと履歴結果はオープン ソース リポジトリにあります。
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- 横向对照 ---------- -->
+    <section class="band">
+      <div class="wrap">
+        <p class="frame-label">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 1v12M10 1v12M1 4h12M1 10h12"></path></svg>水平比較
+        </p>
+        <h2>まずはExcalidrawから始めましょう</h2>
+        <p class="band-lede">
+          Excalidraw の使い慣れたキャンバス、手書きスタイル、ファイル互換性を維持し、マインド マップ、ドキュメント、コード、画像処理、AI 生成を同じキャンバスに接続します。
+        </p>
+
+        <div class="compare-scroll">
+          <table class="compare">
+            <caption>
+              この比較は、3 つの製品の 2026 年半ばの公開リリースに基づいています。いつかこのテーブルが時代遅れになると、テーブルは変更されますが、口径は変更されません。
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr-only">寸法</span></th>
+                <th scope="col" class="us">1NX</th>
+                <th scope="col">Excalidraw</th>
+                <th scope="col">draw.io</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">始めるための最初のステップ</th>
+                <td class="us">キャンバスを開きます。登録なし、ストレージ選択なし、テンプレート選択なし</td>
+                <td>開いて描くこともできます</td>
+                <td>まず保存場所、ファイル名、テンプレートを選択すると、3 つのポップアップ ウィンドウの後にキャンバスが表示されます。</td>
+              </tr>
+              <tr>
+                <th scope="row">ローカルファイルと履歴</th>
+                <td class="us">ローカル ファイルを直接開き、その場で保存し、バージョン履歴を自動的に保持します</td>
+                <td>ブラウザでローカルに保存します。ファイルのインポートとエクスポートは手動で行う必要があります</td>
+                <td>ローカルファイルをサポートします。履歴機能は選択したストレージによって異なります</td>
+              </tr>
+              <tr>
+                <th scope="row">マインドマップ</th>
+                <td class="us">
+                  ネイティブ。 12 のレイアウト、ノードをドラッグしてツリー全体を再配置、XMind でカラー マッチングを復元
+                </td>
+                <td>ネイティブのマインド マップはなく、フレームごとに手作業でアニメーション化されます</td>
+                <td>ツリーのレイアウト、ノードの位置は手動で維持されます</td>
+              </tr>
+              <tr>
+                <th scope="row">ドキュメントとコード</th>
+                <td class="us">
+                  PDF、Word、PPT、Excel はページをめくることができます。コードのハイライトと即時レンダリング
+                </td>
+                <td>文書は画像として貼り付けられます。コードはプレーンテキストです</td>
+                <td>ドキュメントには写真やリンクが掲載されています。コードはプレーンテキストです</td>
+              </tr>
+              <tr>
+                <th scope="row">画像処理</th>
+                <td class="us">
+                  トリミング、スライス、モザイク、パズル、HD エンハンスメント、スマート カットアウトの処理はローカルで行われます。
+                </td>
+                <td>クロップのみ</td>
+                <td>基本的になし</td>
+              </tr>
+              <tr>
+                <th scope="row">AIが生成した</th>
+                <td class="us">
+                  フローチャート、マインド マップ、ページ、PPT が 1 つの文で生成され、結果は引き続き編集可能です
+                </td>
+                <td>テキストからフローチャートを生成し、結果を編集できる</td>
+                <td>グラフの生成と変更、結果の編集が可能</td>
+              </tr>
+              <tr>
+                <th scope="row">ファイルの相互運用性</th>
+                <td class="us">draw.io、Visio、XMind、Mermaid、PlantUML を読む</td>
+                <td>マーメイドは転送できます。 draw.ioとマインドマップは読み込めません</td>
+                <td>Visio を読んでください。マインドマップが読めない</td>
+              </tr>
+              <tr>
+                <th scope="row">完成品のお届け</th>
+                <td class="us">PNG、SVG、PDF、Web、および編集可能な PPTX にエクスポート</td>
+                <td>PNG、SVG、およびオリジナルのプロジェクト ファイルをエクスポート</td>
+                <td>画像、PDF、HTML、およびオリジナルのプロジェクト ファイルをエクスポート</td>
+              </tr>
+              <tr>
+                <th scope="row">パフォーマンスの質</th>
+                <td class="us">Ten Thousand Elements Benchmark は公開されていますが、指標は撤回されており、公開されません。</td>
+                <td>公開ベンチマークなし</td>
+                <td>公開ベンチマークなし</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 收尾 ---------- -->
+    <section class="close">
+      <div class="wrap">
+        <h2>次の写真、ここから始めてください</h2>
+        <ol class="hero-steps steps-mini" aria-hidden="true">
+          <li>草案を描く</li>
+          <li>ガイドマップ</li>
+          <li>出店情報</li>
+          <li>コードを貼り付けます</li>
+          <li>計画を立てる</li>
+        </ol>
+        <p class="close-note">テンプレートの登録や選択は行わないでください。このステップを終えるとキャンバスになります。</p>
+        <div class="actions">
+          <a class="btn" href="/">
+            空のキャンバスを開く
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 10h11M11 6l4 4-4 4"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap foot-row">
+        <span>1NX · 1 台のワークベンチ、無制限の接続、効率 2 倍</span>
+        <a href="/licenses/third-party-notices.html">オープンソースライセンス</a>
+      </div>
+    </footer>
+
+
+</body></html>

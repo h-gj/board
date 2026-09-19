@@ -1,0 +1,1 @@
+import{j as l}from"./index-iyxIYZmR.js";const r=({className:e,icon:i,size:n="1em"})=>l("span",{className:e,style:{width:n,height:"100%",margin:"0 0.5ex 0 0.5ex",display:"inline-flex",lineHeight:0,verticalAlign:"middle",flex:"0 0 auto"},children:i});export{r as I};

@@ -1,0 +1,1 @@
+const e=["flowchart","mindmap","app-page","tablet-page","pc-page","presentation"],t=a=>typeof a=="string"&&e.includes(a),s=a=>a==="app-page"||a==="tablet-page"||a==="pc-page",p=a=>s(a)||a==="presentation",n=a=>a==="hand-drawn"||a==="professional";export{e as D,t as a,n as b,p as c,s as i};

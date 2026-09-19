@@ -1,0 +1,11 @@
+CanvasKit WebGPU / Graphite production asset
+
+Builder: OpenPencil canvaskit-webgpu
+Builder commit: 8d13d297162e9f5f65d9b361f2af83ea45115dbe
+Builder source: https://github.com/open-pencil/canvaskit-webgpu/tree/8d13d297162e9f5f65d9b361f2af83ea45115dbe
+Skia commit: f886711f180d6987f0ec7dd6bf04f85e4c86c50d
+Dawn commit: bc602f0c897dde1d9bae1449477b0877c17150f3
+
+The builder scripts and patches are licensed under the MIT License.
+Skia and Dawn are licensed under the BSD 3-Clause License. Their license
+notices are distributed alongside this file.

@@ -1,0 +1,1 @@
+let o=0,a="image-upscale",l=0;const i=(e,r,t)=>0,d=(e,r,t,s={runId:o,source:a,startedAt:l})=>{},g=(e,r,t)=>{const s={startedAt:performance.now()};return(c,n,u)=>d(c,n,u,s)};export{g as c,d as r,i as s};

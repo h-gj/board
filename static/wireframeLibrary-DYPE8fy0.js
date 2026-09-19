@@ -1,0 +1,1 @@
+import{j as o}from"./index-iyxIYZmR.js";import{WireframeLibrary as m}from"./WireframeLibrary-D84cquhr.js";import"./index-DLsZT56_.js";const e={kind:"custom",Component:({onInsert:r})=>o(m,{onInsert:r})};export{e as default};

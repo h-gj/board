@@ -1,0 +1,1 @@
+const o=self;o.onmessage=({data:r})=>{try{const e=JSON.parse(new TextDecoder().decode(r.buffer));if(e===null||typeof e!="object")throw new Error("JSON 根节点必须是对象或数组");const s={id:r.id,data:e};o.postMessage(s)}catch(e){const s={id:r.id,error:e instanceof Error?e.message:"JSON 解析失败"};o.postMessage(s)}};

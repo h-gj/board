@@ -1,0 +1,1 @@
+import{j as r}from"./index-iyxIYZmR.js";import{D as m}from"./DocumentEmbed-JQ2UNFZ0.js";import"./index-DLsZT56_.js";import"./markdownAssets-MP2i37uy.js";import"./documentHeaderActions-CvTixB2N.js";import"./markdownViewportRange-UOMoFR3j.js";const a=({file:o})=>r(m,{message:`「${o.name}」是旧版 .doc 格式，无法在本地解析。为保障数据不离开浏览器，请用 Word/WPS 另存为 .docx 后重新导入。`});export{a as DocPreview};

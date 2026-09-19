@@ -1,0 +1,1 @@
+import{aI as i}from"./index-iyxIYZmR.js";import"./index-DLsZT56_.js";const t="/fonts/Lilita/Lilita-Regular-i7dPIFZ9Zz-WBtRtedDbYE98RXi4EwSsbg.woff2",a="/fonts/Lilita/Lilita-Regular-i7dPIFZ9Zz-WBtRtedDbYEF8RXi4EwQ.woff2",n=[{uri:t,descriptors:{unicodeRange:i.LATIN_EXT}},{uri:a,descriptors:{unicodeRange:i.LATIN}}];export{n as LilitaFontFaces};
